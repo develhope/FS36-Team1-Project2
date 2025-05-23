@@ -1,7 +1,8 @@
 :root {
-  --colorePrimario: #FD385C;
+  --fontFamily: Airbnb Cereal VF, Circular, -apple-system, BlinkMacSystemFont,
+    Roboto, Helvetica Neue, sans-serif;
+  --colorePrimario: #fd385c;
   --neroPrincipale: #222222;
   --testiGrigi: #6a6a6a;
   --hoverSearch: #ebebeb;
-  --fontFamily: Airbnb Cereal VF, Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
