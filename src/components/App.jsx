@@ -4,8 +4,7 @@ import Button from './Button'
 function App() {
   return (
     <>
-      <Button size='md'></Button>
-      <FaBeer />
+      <Button size='md' bounce='true'><FaBeer /></Button>
     </>
   )
 }

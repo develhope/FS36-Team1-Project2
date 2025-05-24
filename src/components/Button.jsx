@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styles from '../css/Button.module.css';
 export default function Button({ 
     children, 
@@ -7,17 +8,30 @@ export default function Button({
     variant = 'primary',
     size = 'md',
     className = '',
-    bounce = true,
+    bounce = false,
     ...props}){
     
+    const [isBouncing, setIsBouncing] = useState(false)
+
     const classes = `
     ${styles.btn} 
     ${styles[`btn-${size}`]} 
     ${styles[`btn-${variant}`]} 
-    ${disabled ? styles['btn-disabled'] : ''} 
+    ${disabled ? styles['btn-disabled'] : ''}
+    ${isBouncing ? styles['btn-bounce']: ''} 
     ${className}
     `;
+        function handleClick(event){
+            if (disabled) return;
+            bounceOnClick()
+        }
 
+        function bounceOnClick() {
+            if (bounce){
+                setIsBouncing(true);
+                setTimeout(() => setIsBouncing(false), 300);
+            }
+        }
     
     return(
         <>
