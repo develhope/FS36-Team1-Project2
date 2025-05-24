@@ -4,7 +4,8 @@ import Button from './Button'
 function App() {
   return (
     <>
-      <Button size='lg' bounce={true} color='smoke' className="btn-heart"><RiSearchLine /></Button>
+      <Button size='lg' bounce={true} color='heart' className="btn-heart"><RiSearchLine />
+      </Button>
     </>
   )
 }

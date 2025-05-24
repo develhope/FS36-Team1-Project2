@@ -28,6 +28,7 @@
     background: var(--colorePrimario); 
     color: white; 
 }
+
 .btn-pink:hover { 
     background: #DD1063; 
 }
@@ -36,16 +37,24 @@
     background: #EBEBEB; 
     color: black;
 }
+
 .btn-gray:hover {  
     transform: scale(1.05);
 }
 
-.btn-smoke{
+.btn-heart{
     background-color:  rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     border: 3px solid white;
 }
-.btn-smoke:hover{
-    transform: scale(1.1);
+
+.btn-heart:hover{
+    transform: scale(1.05);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -66,26 +75,12 @@
     100% { transform: scale(1.05); }
 }
 
-.pop-in{
-    animation: popIn 0.2s forwards;
+.btn-heart-leave{
+    animation: pop-leave 500ms forwards;
 }
-.pop-out{
-    animation: popOut 0.5s forwards;
-}
-
-@keyframes popIn {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.05);
-    }
-}
-@keyframes popOut {
-    from{
-        transform: scale(1.1);
-    }
-    to{
-        transform: scale(1);
-    }
+@keyframes pop-leave {
+    0% {transform: scale(1.05);}
+    30% {transform: scale(1.1);}
+    50% {transform: scale(1);}
+    100% {transform: scale(1);}
 }

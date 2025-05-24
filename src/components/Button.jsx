@@ -12,7 +12,7 @@ export default function Button({
     }){
     
     const [isBouncing, setIsBouncing] = useState(false)
-    const [animationHeart, setAnimationHeart] = useState('')
+    const [heartAnimation, setHeartAnimation] = useState('')
     const isBtnHeart = className.includes('btn-heart');
 
     const classes = `
@@ -21,7 +21,8 @@ export default function Button({
     ${styles[`btn-${color}`]} 
     ${disabled ? styles['btn-disabled'] : ''}
     ${isBouncing ? styles['btn-bounce']: ''}
-    ${animationHeart ? styles[animationHeart]: ''} 
+    ${isBtnHeart ? styles['btn-heart']: ''}
+    ${heartAnimation ? styles[heartAnimation] : ''}
     ${className}
     `;
     
@@ -35,16 +36,28 @@ export default function Button({
             setTimeout(() => setIsBouncing(false), 300);
         }
     }
+
+    function handleHeartAnimation(){
+        const prevBounce = isBouncing
+        setIsBouncing(false)
+        setHeartAnimation('btn-heart-leave');
+        
+
+        setTimeout(() => {
+            setHeartAnimation('');
+            setIsBouncing(prevBounce)
+        }, 550);
+    }
     
+ 
+
     return(
         <>
             <button type={type} onClick={handleClick} disabled={disabled} className={classes}
-            onMouseEnter={() => isBtnHeart && setAnimationHeart('pop-in')}
-            onMouseLeave={() => isBtnHeart && setAnimationHeart('pop-out')}>
-            {children}
+            {...(isBtnHeart ? { onMouseLeave: (handleHeartAnimation) } : {})}
+            >
+                {children}
             </button>
         </>
     )
 }
-
-{/* <Button size='md' bounce={true} color='white'>example</Button>  */}
