@@ -1,7 +1,13 @@
-import './css/App.css'
+import { FaBeer } from 'react-icons/fa'
+import Button from './Button'
 
 function App() {
-  return
+  return (
+    <>
+      <Button size='md'></Button>
+      <FaBeer />
+    </>
+  )
 }
 
 export default App
