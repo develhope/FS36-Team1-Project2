@@ -1,10 +1,10 @@
-import { FaBeer } from 'react-icons/fa'
+import { RiSearchLine } from "react-icons/ri";
 import Button from './Button'
 
 function App() {
   return (
     <>
-      <Button size='md' bounce='true'><FaBeer /></Button>
+      <Button size='lg' bounce={true} color='smoke' className="btn-heart"><RiSearchLine /></Button>
     </>
   )
 }
