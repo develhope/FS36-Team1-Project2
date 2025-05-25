@@ -5,29 +5,34 @@ export default function Button({
     children, 
     disabled,
     type = 'button',
-    color = 'gray',
+    variant = 'gray',
     size = 'md',
     className = '',
     bounce = false,
+    onActivate,
     }){
     
     const [isBouncing, setIsBouncing] = useState(false)
     const [heartAnimation, setHeartAnimation] = useState('')
-    const isBtnHeart = className.includes('btn-heart');
+    const isBtnHeart = variant === 'heart';
 
-    const classes = `
-    ${styles.btn} 
-    ${styles[`btn-${size}`]} 
-    ${styles[`btn-${color}`]} 
-    ${disabled ? styles['btn-disabled'] : ''}
-    ${isBouncing ? styles['btn-bounce']: ''}
-    ${isBtnHeart ? styles['btn-heart']: ''}
-    ${heartAnimation ? styles[heartAnimation] : ''}
-    ${className}
-    `;
+    const classes = [
+        styles.btn,
+        styles[`btn-${size}`],
+        styles[`btn-${variant}`],
+        disabled && styles['btn-disabled'],
+        isBouncing && styles['btn-bounce'],
+        heartAnimation && styles[heartAnimation],
+        className
+    ].filter(Boolean).join(' ');
+
     
     function handleClick(event){
-        !disabled && bounceOnClick()
+        if (disabled) return;
+
+        bounceOnClick();
+        //check parent
+        onActivate?.();
     }
 
     function bounceOnClick() {
@@ -38,15 +43,8 @@ export default function Button({
     }
 
     function handleHeartAnimation(){
-        const prevBounce = isBouncing
-        setIsBouncing(false)
         setHeartAnimation('btn-heart-leave');
-        
-
-        setTimeout(() => {
-            setHeartAnimation('');
-            setIsBouncing(prevBounce)
-        }, 550);
+        setTimeout(() => setHeartAnimation(''), 550);
     }
     
  
