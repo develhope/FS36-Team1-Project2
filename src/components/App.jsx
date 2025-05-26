@@ -1,13 +1,12 @@
-import { RiSearchLine } from "react-icons/ri";
-import Button from './Button'
+import Button from "./Button";
+import { Color } from "../models/Color";
 
 function App() {
   return (
     <>
-      <Button size='lg' bounce={true} variant='heart'><RiSearchLine />
-      </Button>
+      <Button size="lg" color={Color.Tertiary} bounce={true} icon={""} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
