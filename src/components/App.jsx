@@ -9,7 +9,7 @@ function App() {
   const [isGuestModalVisibile, setIsGuestModaleVisible] = useState(false);
   return (
     <>
-      <div>
+      {/* <div>
         <Button
           size={Size.Lg}
           color={Color.Third}
@@ -19,7 +19,7 @@ function App() {
         />
         {isGuestModalVisibile && <Modal />}
       </div>
-      <Button size={Size.Sm} color={Color.Second} icon={Icons.Star} />
+      <Button size={Size.Sm} color={Color.Second} icon={Icons.Star} /> */}
     </>
   );
 }
