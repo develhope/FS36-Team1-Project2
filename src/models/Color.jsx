@@ -1,5 +1,6 @@
 export const Color = {
-  Primary: "gray",
-  Secondary: "pink",
-  Tertiary: "dark-gray",
+  First: "gray",
+  Second: "pink",
+  Third: "dark-gray",
+  Fourth: "white",
 };

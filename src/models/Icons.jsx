@@ -1,6 +1,7 @@
+import { FiShare } from "react-icons/fi";
 import { SiAirbnb } from "react-icons/si";
 import { BiHomeAlt2 } from "react-icons/bi";
-import { CiCalendar } from "react-icons/ci";
+import { CiCalendar, CiHeart } from "react-icons/ci";
 import { RiSearchLine } from "react-icons/ri";
 import { GoPlusCircle } from "react-icons/go";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -26,6 +27,8 @@ import {
 } from "react-icons/io";
 
 export const Icons = {
+  Heart: <CiHeart />,
+  Share: <FiShare />,
   Globe: <LuGlobe />,
   Star: <IoIosStar />,
   Meta: <AiOutlineX />,

@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { Icons } from "../models/Icons";
 import { Color } from "../models/Color";
+import { Size } from "../models/Size";
 import styles from "../css/Button.module.css";
 
 export default function Button({
   disabled,
-  type = "button",
   color = Color.Tertiary,
-  size = "md",
-  className = "",
+  size = Size.Lg,
   bounce = false,
+  icon = Icons.Globe,
+  onClick,
 }) {
   const [isBouncing, setIsBouncing] = useState(false);
-  const [heartAnimation, setHeartAnimation] = useState();
+  const [heartAnimation, setHeartAnimation] = useState(false);
   const isBtnHeart = color === Color.Tertiary;
 
   const classes = [
@@ -21,16 +22,16 @@ export default function Button({
     styles[`btn-${color}`],
     disabled && styles["btn-disabled"],
     isBouncing && styles["btn-bounce"],
-    heartAnimation && styles[heartAnimation],
-    className,
+    heartAnimation && styles[`btn-${Color.Tertiary}-leave`],
   ]
     .filter(Boolean)
     .join(" ");
 
-  function handleClick(event) {
+  function handleClick() {
     if (disabled) return;
 
     bounceOnClick();
+    onClick?.((prev) => !prev);
   }
 
   function bounceOnClick() {
@@ -41,21 +42,20 @@ export default function Button({
   }
 
   function handleHeartAnimation() {
-    setHeartAnimation(`btn-${Color.Tertiary}-leave`);
-    setTimeout(() => setHeartAnimation(""), 550);
+    if (!isBtnHeart) return;
+    setHeartAnimation(true);
+    setTimeout(() => setHeartAnimation(false), 550);
   }
 
   return (
     <>
       <button
-        type={type}
         onClick={handleClick}
         disabled={disabled}
         className={classes}
-        {...(isBtnHeart ? { onMouseLeave: handleHeartAnimation } : {})}
+        onMouseLeave={isBtnHeart ? handleHeartAnimation : undefined}
       >
-        {Icons.AirBnbLogo}
-        {Icons.House}
+        {icon}
       </button>
     </>
   );
