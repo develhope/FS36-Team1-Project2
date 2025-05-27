@@ -1,7 +1,7 @@
-import './css/App.css'
+import SwiperComponent from './SwiperComponent'
 
 function App() {
-  return
+  return <SwiperComponent />
 }
 
 export default App
