@@ -1,0 +1,114 @@
+ :root{
+    --gap: 12px;
+    --active-page-height: 0.313rem;
+}
+
+
+@media (max-width:709px){
+    /* nuovo header */
+}
+
+@media (min-width:710px) and (max-width:949px) {
+    header {
+        padding: 0.5rem 1.5rem 0rem;
+    }
+
+    header > :first-child {
+        width: 100%;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1439px) {
+    header {
+        padding: 1rem 2rem 0rem;
+    }
+
+    header > :first-child {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) and (max-width:1863px) {
+    header {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    header > :first-child{
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1864px) {
+    header {
+        padding: 2rem 0 0 0;
+    }
+
+    header > :first-child{
+        min-width: 1824px;
+        margin: 0 auto;
+    }
+}
+
+header{
+    background: linear-gradient(180deg,#ffffff 39.9%,#f8f8f8 100%);
+}
+
+nav {
+    gap: var(--gap);
+    width: 440px;
+}
+
+nav > div > a > span {
+    margin: 0 0 0 0.5rem;
+    font-size: 0.875rem;
+    color: var( --testiGrigi);
+}
+
+div > a {
+    color: var(--neroPrincipale);
+}
+
+.header-text-size {
+    font-size: 0.875rem;
+}
+
+.airbnb-logo {
+    font-size: 2rem;
+    color: var(--colorePrimario);
+}
+
+.header-button-container {
+    gap: var(--gap);
+}
+.header-button-container > a {
+    width: 103px;
+    height: 16px;
+    border-radius: 9999px;
+    padding: 1rem;
+}
+
+.header-button-container > a:hover {
+    background-color: #EBEBEB;
+}
+
+
+.active-page {
+    animation: expandWidth 0.5s ease forwards;
+    height: var(--active-page-height);
+    background-color: var(--neroPrincipale);
+    margin: 5px;
+}
+
+.icon-height-adjust {
+    padding: var(--active-page-height) 0 0 0;
+}
+
+@keyframes expandWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
+}

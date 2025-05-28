@@ -4,11 +4,13 @@ import { Size } from "../models/Size";
 import { Color } from "../models/Color";
 import { Icons } from "../models/Icons";
 import { Modal } from "./Modal";
+import { Header } from "./Header";
 
 function App() {
   const [isGuestModalVisibile, setIsGuestModaleVisible] = useState(false);
   return (
     <>
+      <Header />
       {/* <div>
         <Button
           size={Size.Lg}
