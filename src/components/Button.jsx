@@ -9,7 +9,7 @@ export default function Button({
   color = Color.Third,
   size = Size.Lg,
   bounce = false,
-  icon = Icons.Globe,
+  icon = <Icons.Globe />,
   onClick,
 }) {
   const [isBouncing, setIsBouncing] = useState(false);
