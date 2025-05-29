@@ -1,6 +1,6 @@
 import CardWrapped from "../components/CardWrapped";
 
-const CarouselWrapped = ({ city, data }) => {
+export default function CarouselWrapped({ city, data }) {
   return (
     <div className="carousel-section">
       <h1>{city}: alloggi popolari</h1>
@@ -10,5 +10,3 @@ const CarouselWrapped = ({ city, data }) => {
     </div>
   );
 };
-
-export default CarouselWrapped;

@@ -1,5 +1,7 @@
+import { cardData } from "./components/CardData";
 import CarouselWrapped from "./components/CarouselWrapped";
-import { cardData } from "./data/CardData";
+
+
 
 function App() {
   return (
