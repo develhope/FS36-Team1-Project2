@@ -56,7 +56,7 @@ export function Header() {
               <a className="flex justify-center align-center" href="#">
                 <Icons.Bell
                   style={{ color: "var(--colorePrimario)" }}
-                  size={`calc(${logoSize} + 0.5rem)`}
+                  size={logoSize}
                 />
                 <span className="header-text-size">Servizi</span>
               </a>

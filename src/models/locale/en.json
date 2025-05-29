@@ -1,0 +1,8 @@
+{
+  "welcome": "Welcome",
+  "goodbye": "Goodbye",
+  "buttons": {
+    "submit": "Submit",
+    "cancel": "Cancel"
+  }
+}
