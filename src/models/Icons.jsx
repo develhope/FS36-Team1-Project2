@@ -8,6 +8,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { CiCalendar, CiHeart } from "react-icons/ci";
 import { LiaConciergeBellSolid } from "react-icons/lia";
 import { LuCalendarFold, LuGlobe } from "react-icons/lu";
+import { HiOutlineQuestionMarkCircle } from "react-icons/hi";
 import { TbAirBalloon, TbCurrencyEuro } from "react-icons/tb";
 import { TfiArrowCircleLeft, TfiArrowCircleRight } from "react-icons/tfi";
 import {
@@ -54,4 +55,5 @@ export const Icons = {
   PlusMinus: MdOutlineArrowForwardIos,
   LeftArrow: MdOutlineArrowBackIosNew,
   RightArrowCircle: TfiArrowCircleRight,
+  Question: HiOutlineQuestionMarkCircle,
 };

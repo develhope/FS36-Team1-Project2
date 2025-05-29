@@ -1,0 +1,72 @@
+:root{
+    --hr-margin: 10px;
+    --div-width-adjust: 20px
+}
+
+#guest{
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 385px;
+    border-radius: 10px;
+    right: 0px;
+    top: 40px;
+    padding: 20px 0;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);   
+    font-size: 20px;
+}
+
+#guest > hr{
+    border: 1px solid var(--hoverSearch);
+    box-sizing: border-box;
+    width: calc(100% - calc(2*var(--hr-margin)));
+    margin: var(--hr-margin);
+}
+
+#guest > li {
+    all: unset;
+    padding: 15px var(--div-width-adjust);
+    width: calc(100% - calc(2 * var(--div-width-adjust)));
+}
+
+#guest > li:hover {
+    background-color: var(--hoverSearch);
+    cursor: pointer;
+}
+
+#guest > li:first-of-type > a {
+    padding: 0 0 0 30px;
+}
+
+#guest button {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+}
+
+#guest button > small{
+    color: var(--testiGrigi);    
+    width: 150px;
+    padding: 0 20px 0 0;
+}
+
+#guest > li > svg {
+    position: absolute;
+    left: 19px;
+    top: 37px
+}
+
+
+#language{
+    position: absolute;
+    background-color: green;
+    width: 250px;
+    height: 400px;
+    border-radius: 5%;
+    right: 0px;
+    top: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}

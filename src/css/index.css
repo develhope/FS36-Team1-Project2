@@ -80,6 +80,10 @@ a{
     flex-direction: row;
 }
 
+.logo{
+  color: var(--colorePrimario);
+}
+
 .bounce-animation {
     animation: bounce 300ms ease-out !important;
 }
