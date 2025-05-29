@@ -14,7 +14,7 @@ const CardWrapped = ({ data }) => {
           rating={card.rating}
         />
       ))}
-    </div>
+    </div> //ciao
   );
 };
 
