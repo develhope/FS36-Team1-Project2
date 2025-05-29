@@ -6,7 +6,7 @@ import styles from "../css/Button.module.css";
 
 export default function Button({
   disabled,
-  color = Color.Tertiary,
+  color = Color.Third,
   size = Size.Lg,
   bounce = false,
   icon = Icons.Globe,
@@ -14,7 +14,7 @@ export default function Button({
 }) {
   const [isBouncing, setIsBouncing] = useState(false);
   const [heartAnimation, setHeartAnimation] = useState(false);
-  const isBtnHeart = color === Color.Tertiary;
+  const isBtnHeart = color === Color.Third;
 
   const classes = [
     styles.btn,
@@ -22,7 +22,7 @@ export default function Button({
     styles[`btn-${color}`],
     disabled && styles["btn-disabled"],
     isBouncing && styles["btn-bounce"],
-    heartAnimation && styles[`btn-${Color.Tertiary}-leave`],
+    heartAnimation && styles[`btn-${Color.Third}-leave`],
   ]
     .filter(Boolean)
     .join(" ");

@@ -1,3 +1,5 @@
+
+
 const Card = ({ image, location, dates, hostType, price, rating }) => {
   // Genera randomicamente la visibilità dell'etichetta
   const showLabel = Math.random() < 0.5; // 50% di probabilità

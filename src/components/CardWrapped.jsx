@@ -1,10 +1,9 @@
-import Card from './Card';
-import { cardData } from '../data/CardData';
+import Card from "./Card";
 
-const CardWrapped = () => {
+const CardWrapped = ({ data }) => {
   return (
     <div className="card-wrapper">
-      {cardData.map((card, index) => (
+      {data.map((card, index) => (
         <Card
           key={index}
           image={card.image}
