@@ -1,0 +1,28 @@
+.card {
+  width: 200px;
+  height: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative; /* Permette il posizionamento assoluto dell'etichetta */
+}
+
+.card-image {
+  width: 200px;
+  height: 180px;
+}
+
+.image {
+
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column; /* Disposizione in colonna */
+  align-items: flex-start; /* Allinea gli elementi a sinistra */
+  padding: 10px;
+  flex-grow: 1;
+}
+

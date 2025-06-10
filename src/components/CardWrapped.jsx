@@ -1,4 +1,6 @@
+
 import Card from "./Card";
+import '../css/cardWrapped.css'
 
 const CardWrapped = ({ data }) => {
   return (
@@ -14,7 +16,7 @@ const CardWrapped = ({ data }) => {
           rating={card.rating}
         />
       ))}
-    </div> //ciao
+    </div>
   );
 };
 

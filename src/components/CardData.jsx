@@ -1,7 +1,7 @@
 export const cardData = {
   Milano: [
     {
-      image: "path/to/image1.jpg",
+      image: "../assets/Images/milano/corvetto.png",
       location: "Stanza a Lodi - Corvetto",
       dates: "22-24 ago",
       hostType: "Host privato",
@@ -9,7 +9,7 @@ export const cardData = {
       rating: "4,81",
     },
     {
-      image: "path/to/image2.jpg",
+      image:  "../assets/Images/milano/milano.png",
       location: "Stanza a Milano",
       dates: "01-03 ago",
       hostType: "Host privato",
@@ -17,7 +17,7 @@ export const cardData = {
       rating: "4,77",
     },
     {
-      image: "path/to/image3.jpg",
+      image:  "../assets/Images/milano/isola.png",
       location: "Stanza a Milano",
       dates: "22-24 ago",
       hostType: "Host privato",
@@ -25,7 +25,7 @@ export const cardData = {
       rating: "4,81",
     },
     {
-      image: "path/to/image4.jpg",
+      image:  "../assets/Images/milano/centrostorico.png",
       location: "Stanza a Milano",
       dates: "01-03 ago",
       hostType: "Host privato",
@@ -33,7 +33,7 @@ export const cardData = {
       rating: "4,77",
     },
     {
-      image: "path/to/image5.jpg",
+      image:  "../assets/Images/milano/loreto.png",
       location: "Stanza a Paderno Dugnano",
       dates: "20-22 mar",
       hostType: "Host privato",
@@ -41,7 +41,7 @@ export const cardData = {
       rating: "4,93",
     },
     {
-      image: "path/to/image6.jpg",
+      image:  "../assets/Images/milano/lambrate.png",
       location: "Stanza a Milano",
       dates: "01-03 ago",
       hostType: "Host privato",
@@ -49,7 +49,7 @@ export const cardData = {
       rating: "5,0",
     },
     {
-      image: "path/to/image7.jpg",
+      image:  "../assets/Images/milano/loreto2.png",
       location: "Stanza a Milano",
       dates: "18-20 lug",
       hostType: "Host privato",

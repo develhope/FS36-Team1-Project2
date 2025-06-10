@@ -1,13 +1,13 @@
-import { cardData } from "./components/CardData";
-import CarouselWrapped from "./components/CarouselWrapped";
-
+import CarouselWrapped from './components/CarouselWrapped';
+import { cardData } from './components/CardData';
+import './css/App.css'
 
 
 function App() {
   return (
-    <div className="app">
-      {Object.keys(cardData).map((city, index) => (
-        <CarouselWrapped key={index} city={city} data={cardData[city]} />
+    <div className="app-container">
+      {Object.entries(cardData).map(([city, data]) => (
+        <CarouselWrapped key={city} city={city} data={data} />
       ))}
     </div>
   );
