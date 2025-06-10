@@ -1,4 +1,11 @@
-.card-wrapper {
+/* .card-wrapper {
   justify-content: center;
   gap: 10px;
+} */
+
+
+.card-wrapper {
+	display: flex;
+	width: 100%;
+	gap: 10px;
 }

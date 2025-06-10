@@ -6,9 +6,9 @@
   --testiGrigi: #6a6a6a;
   --hoverSearch: #ebebeb;
 }
-div{
+/* div{
   display: flex;
-}
+} */
 
 @font-face {
   font-family: 'AirbnbCerealVF';
