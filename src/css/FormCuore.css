@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+#form-cuore {
+  width: 570px;
+  height: 675px;
+  background-color: #fff;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 35px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+}
+
+#accedi-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+h4 {
+  margin: 18px;
+  font-weight: 600;
+}
+
+hr {
+  width: 570px;
+  border: none;
+  border-top: 1px solid rgb(215, 215, 215);
+  position: relative;
+  right: 0px;
+  margin: 0px;
+}
+
+#numero-container select {
+  width: 520px;
+  height: 56px;
+  border-radius: 8px 8px 0px 0px;
+  border: 1px solid rgb(130, 130, 130);
+  border-bottom: none;
+}
+
+#numero-container input {
+  width: 520px;
+  height: 56px;
+  border-radius: 0px 0px 8px 8px;
+  border: 1px solid rgb(130, 130, 130);
+  text-indent: 10px;
+}
+
+select {
+  text-indent: 10px;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  font-size: 16px;
+  text-indent: 10px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 430;
+  margin-top: 35px;
+}
+
+#testo {
+  margin-bottom: 0px;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  line-height: 110%;
+}
+
+#link-privacy {
+  color: black;
+  font-weight: 500;
+}
+
+#btn-continua {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+#continua-container button {
+  width: 520px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#svg-google img,
+#svg-apple img,
+#svg-email img,
+#svg-fb img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 20px;
+  top: 12px;
+}
+
+#continua-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+div#google,
+div#apple,
+div#email,
+div#facebook {
+  font-weight: 550;
+  font-size: 0.9rem;
+}
+
+#btn-close {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 34px;
+  left: 34px;
+}
+
+#btn-close > svg {
+  width: 25px;
+  height: 25px;
+}
+
+#btn-close:hover {
+  background-color: #f6f6f6;
+}
+
+#btn-continua-main {
+  width: 520px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg,rgba(230, 30, 77, 1) 0%, rgba(227, 28, 95, 1) 82%, rgba(215, 4, 102, 1) 100%);
+  color: white;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+div#container-hr {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#hr-continua {
+  right: 0px;
+}
+
+#o {
+  padding: 0 10px;
+  font-size: 0.9rem;
+}
