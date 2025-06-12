@@ -40,14 +40,14 @@ export const cardData = {
       price: "61 € per 2 notti",
       rating: "4,93",
     },
-    {
+    /*{
       image:  "../assets/Images/milano/lambrate.png",
       location: "Stanza a Milano",
       dates: "01-03 ago",
       hostType: "Host privato",
       price: "126 € per 2 notti",
       rating: "5,0",
-    },
+    },*/
     {
       image:  "../assets/Images/milano/loreto2.png",
       location: "Stanza a Milano",
@@ -56,11 +56,19 @@ export const cardData = {
       price: "131 € per 2 notti",
       rating: "4,97",
     },
+     {
+      image:  "../assets/Images/milano/milano2.png",
+      location: "Stanza a Milano",
+      dates: "14-80 lug",
+      hostType: "Host privato",
+      price: "120 € per 2 notti",
+      rating: "4,77",
+    },
   ],
 
   Roma: [
     {
-      image: "path/to/image14.jpg",
+      image: "../assets/Images/roma/roma.png",
       location: "Appartamento ⋅ Roma",
       dates: "30 mag - 01 giu",
       hostType: "Host privato",
@@ -68,7 +76,7 @@ export const cardData = {
       rating: "4,91",
     },
     {
-      image: "path/to/image15.jpg",
+      image: "../assets/Images/roma/roma2.png",
       location: "Stanza a Roma",
       dates: "30 mag - 01 giu",
       hostType: "Host privato",
@@ -76,7 +84,7 @@ export const cardData = {
       rating: "4,92",
     },
     {
-      image: "path/to/image16.jpg",
+      image: "../assets/Images/roma/roma3.png",
       location: "Stanza a Roma",
       dates: "30 mag - 01 giu",
       hostType: "Host privato",
@@ -84,7 +92,7 @@ export const cardData = {
       rating: "4,92",
     },
     {
-      image: "path/to/image17.jpg",
+      image: "../assets/Images/roma/roma4.png",
       location: "Stanza a Roma",
       dates: "30 mag - 01 giu",
       hostType: "Host privato",
@@ -92,7 +100,7 @@ export const cardData = {
       rating: "4,85",
     },
     {
-      image: "path/to/image18.jpg",
+      image: "../assets/Images/roma/roma5.png",
       location: "Appartamento ⋅ Roma",
       dates: "30 mag - 01 giu",
       hostType: "Host privato",
@@ -100,7 +108,7 @@ export const cardData = {
       rating: "4,96",
     },
     {
-      image: "path/to/image19.jpg",
+      image: "../assets/Images/roma/roma6.png",
       location: "Stanza a Roma",
       dates: "30 mag - 01 giu",
       hostType: "Host privato",
@@ -108,7 +116,15 @@ export const cardData = {
       rating: "4,96",
     },
     {
-      image: "path/to/image20.jpg",
+      image: "../assets/Images/roma/roma7.png",
+      location: "Stanza a Roma",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "211 € per 2 notti",
+      rating: "5,0",
+    },
+      {
+      image: "../assets/Images/roma/roma8.png",
       location: "Stanza a Roma",
       dates: "30 mag - 01 giu",
       hostType: "Host privato",
@@ -119,7 +135,7 @@ export const cardData = {
 
   Torino: [
     {
-      image: "path/to/image1.jpg",
+      image: "../assets/Images/torino/torino.png",
       location: "Appartamento - Aurora",
       dates: "25-27 lug",
       hostType: "Host privato",
@@ -127,7 +143,7 @@ export const cardData = {
       rating: "4,78",
     },
     {
-      image: "path/to/image2.jpg",
+      image: "../assets/Images/torino/torino2.png",
       location: "Stanza a Parella",
       dates: "25-27 lug",
       hostType: "Host privato",
@@ -135,7 +151,7 @@ export const cardData = {
       rating: "4,82",
     },
     {
-      image: "path/to/image3.jpg",
+      image: "../assets/Images/torino/torino3.png",
       location: "Alloggio (Torino)",
       dates: "18-20 lug",
       hostType: "Host privato",
@@ -143,7 +159,39 @@ export const cardData = {
       rating: "4,83",
     },
     {
-      image: "path/to/image4.jpg",
+      image: "../assets/Images/torino/torino4.png",
+      location: "Stanza a San Donato",
+      dates: "12-14 set",
+      hostType: "Host privato",
+      price: "89 € per 2 notti",
+      rating: "4,92",
+    },
+       {
+      image: "../assets/Images/torino/torino5.png",
+      location: "Stanza a San Donato",
+      dates: "12-14 set",
+      hostType: "Host privato",
+      price: "89 € per 2 notti",
+      rating: "4,92",
+    },
+       {
+      image: "../assets/Images/torino/torino6.png",
+      location: "Stanza a San Donato",
+      dates: "12-14 set",
+      hostType: "Host privato",
+      price: "89 € per 2 notti",
+      rating: "4,92",
+    },
+       {
+      image: "../assets/Images/torino/torino7.png",
+      location: "Stanza a San Donato",
+      dates: "12-14 set",
+      hostType: "Host privato",
+      price: "89 € per 2 notti",
+      rating: "4,92",
+    },
+       {
+      image: "../assets/Images/torino/torino8.png",
       location: "Stanza a San Donato",
       dates: "12-14 set",
       hostType: "Host privato",
@@ -178,6 +226,38 @@ export const cardData = {
       rating: "4,93",
     },
     {
+      image: "path/to/image8.jpg",
+      location: "Stanza a Napoli",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "180 € per 2 notti",
+      rating: "5,0",
+    },
+     {
+      image: "path/to/image8.jpg",
+      location: "Stanza a Napoli",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "180 € per 2 notti",
+      rating: "5,0",
+    },
+     {
+      image: "path/to/image8.jpg",
+      location: "Stanza a Napoli",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "180 € per 2 notti",
+      rating: "5,0",
+    },
+     {
+      image: "path/to/image8.jpg",
+      location: "Stanza a Napoli",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "180 € per 2 notti",
+      rating: "5,0",
+    },
+     {
       image: "path/to/image8.jpg",
       location: "Stanza a Napoli",
       dates: "30 mag - 01 giu",
@@ -444,6 +524,14 @@ export const cardData = {
       hostType: "Host privato",
       price: "143 € per 2 notti",
       rating: "4,75"
+    },
+     {
+      image: "path/to/image39.jpg",
+      location: "Stanza a Firenze",
+      dates: "29-31 ago",
+      hostType: "Host privato",
+      price: "143 € per 2 notti",
+      rating: "4,75"
     }
   ],
 
@@ -489,6 +577,22 @@ export const cardData = {
       rating: "4,95"
     },
     {
+      image: "path/to/image45.jpg",
+      location: "Appartamento · Erzsébetváros",
+      dates: "27-29 giu",
+      hostType: "Host privato",
+      price: "122 € per 2 notti",
+      rating: "4,9"
+    },
+     {
+      image: "path/to/image45.jpg",
+      location: "Appartamento · Erzsébetváros",
+      dates: "27-29 giu",
+      hostType: "Host privato",
+      price: "122 € per 2 notti",
+      rating: "4,9"
+    },
+     {
       image: "path/to/image45.jpg",
       location: "Appartamento · Erzsébetváros",
       dates: "27-29 giu",
