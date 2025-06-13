@@ -1,152 +1,28 @@
 import { useState } from "react";
-import style from "../css/Modal.module.css";
+import Modal from "react-modal";
 import { Icons } from "../models/Icons";
-import ReactModal from "react-modal";
-import {
-  iconConfig,
-  suggestedLanguageConfig,
-  selectLanguageConfig,
-  selectCurrencyConfig,
-} from "../locale/modalConfig";
+import style from "../css/Modal.module.css";
 
-function Modal({ host, language, heart, onClose }) {
-  const [activeId, setActiveId] = useState(null);
-  const hostIconsClasses = `flex flex-col justify-center align-center ${style["icon"]}`;
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    border: "none",
+  },
+};
 
-  const customHeartStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-      border: "none",
-    },
-  };
+Modal.setAppElement("#root");
 
-  function handleButtonClose() {
-    setActiveId(null);
-    onClose();
-  }
+function FormCuore() {
+  const [openHeart, setOpenHeart] = useState(false);
 
   return (
     <>
-      <ReactModal
-        isOpen={host}
-        onRequestClose={handleButtonClose}
-        id={style["host"]}
-        className={`flex flex-col justify-between ${style["modal-centered"]}`}
-      >
-        <button
-          className={style["close-modal-button"]}
-          onClick={handleButtonClose}
-        >
-          <Icons.Close />
-        </button>
-        <h2 className="flex justify-center">Cosa vorresti offrire?</h2>
-        <div className="flex">
-          {iconConfig.map((element) => (
-            <div
-              key={element.id}
-              onClick={() => setActiveId(element.id)}
-              className={`${hostIconsClasses} ${
-                activeId === element.id ? style["active"] : ""
-              }`}
-            >
-              <element.Icon />
-              <span>{element.label}</span>
-            </div>
-          ))}
-        </div>
-        <hr />
-        <button
-          disabled={!activeId}
-          className="flex align-center justify-center"
-          id={activeId === null ? style["disabled"] : ""}
-          onClick={handleButtonClose}
-        >
-          Avanti
-        </button>
-      </ReactModal>
-
-      <ReactModal
-        isOpen={language}
-        onRequestClose={onClose}
-        className={`flex flex-col ${style["modal-centered"]}`}
-        id={style["language"]}
-      >
-        <button
-          className={style["close-modal-button"]}
-          onClick={handleButtonClose}
-        >
-          <Icons.Close />
-        </button>
-        <section>
-          <div className={style["select"]}>
-            <span onClick={() => setActiveId(null)}>Lingua e regione</span>
-            <span onClick={() => setActiveId("currency")}>Valuta</span>
-          </div>
-          <div className="blackline"></div>
-          <hr />
-        </section>
-        <section className={style["list-section"]}>
-          {activeId === null && (
-            <div id={style["region"]}>
-              <div className={style["translation"]}>
-                <h5>
-                  Traduzione <Icons.Translate />
-                </h5>
-                <small>
-                  Traduci automaticamente le descrizioni e le recensioni in
-                  italiano
-                </small>
-              </div>
-              <section className={style["suggested"]}>
-                <h2>Lingue e aree geografiche consigliate</h2>
-                <ul className="flex">
-                  {suggestedLanguageConfig.map(({ id, language, country }) => (
-                    <li key={id} className="flex flex-col">
-                      <span>{language}</span>
-                      <small>{country}</small>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-              <h3>Scegli una lingua e un'area geografica</h3>
-              <section className={style["language-chosen"]}>
-                <ul className={`flex ${style["list"]}`}>
-                  {selectLanguageConfig.map(({ id, lang, state }) => (
-                    <li key={id} className="flex flex-col">
-                      <span>{lang}</span>
-                      <small>{state}</small>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            </div>
-          )}
-          {activeId === "currency" && (
-            <>
-              <h3> Scegli una valuta </h3>
-              <ul className={`flex ${style["list"]}`}>
-                {selectCurrencyConfig.map(({ id, currency, label }) => (
-                  <li key={id} className="flex flex-col">
-                    <span>{currency}</span>
-                    <small>{label}</small>
-                  </li>
-                ))}
-              </ul>
-            </>
-          )}
-        </section>
-      </ReactModal>
-
-      <ReactModal
-        isOpen={heart}
-        style={customHeartStyles}
-        onRequestClose={handleButtonClose}
-      >
+      <Modal isOpen={openHeart} style={customStyles} onRequestClose={onclose}>
         <form id={style["form-cuore"]}>
           <div id={style["form-container"]}>
             <div id={style["accedi-container"]}>
@@ -481,9 +357,15 @@ function Modal({ host, language, heart, onClose }) {
             </div>
           </div>
         </form>
-      </ReactModal>
+      </Modal>
+      <button
+        id={style["btn-cuore"]}
+        onClick={() => setOpenHeart((prev) => !prev)}
+      >
+        <Icons.Heart />
+      </button>
     </>
   );
 }
 
-export default Modal;
+export default FormCuore;
