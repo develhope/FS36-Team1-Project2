@@ -9,9 +9,10 @@ export default function Button({
   color = Color.Third,
   size = Size.Lg,
   bounce = false,
+  isActive = false,
   icon = <Icons.Globe />,
-  // ricorda di dirglielo di questa propo globe
   onClick,
+  children,
 }) {
   const [isBouncing, setIsBouncing] = useState(false);
   const [heartAnimation, setHeartAnimation] = useState(false);
@@ -24,6 +25,7 @@ export default function Button({
     disabled && styles["btn-disabled"],
     isBouncing && styles["btn-bounce"],
     heartAnimation && styles[`btn-${Color.Third}-leave`],
+    isActive && styles["btn-active"],
   ]
     .filter(Boolean)
     .join(" ");
@@ -56,6 +58,7 @@ export default function Button({
         className={classes}
         onMouseLeave={isBtnHeart ? handleHeartAnimation : undefined}
       >
+        {children}
         {icon}
       </button>
     </>

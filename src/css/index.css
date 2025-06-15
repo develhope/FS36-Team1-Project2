@@ -5,7 +5,10 @@
   --neroPrincipale: #222222;
   --testiGrigi: #6a6a6a;
   --hoverSearch: #ebebeb;
+  --shadow-light-container: 0.5rem 0.5rem 1.5rem 0 rgb(233, 233, 237);
+  --shadow-dark-container: 0.5rem 0.5rem 1.5rem 0 rgba(66, 68, 90, 1);
 }
+
 @font-face {
   font-family: 'AirbnbCerealVF';
   src: url(../assets/AirbnbCerealVF/AirbnbCereal_W_Bd.otf);
@@ -30,9 +33,18 @@
   font-family: 'AirbnbCerealVF';
   src: url(../assets/AirbnbCerealVF/AirbnbCereal_W_XBd.otf);
 }
+
 *{
   margin: 0;
   padding: 0  ;
+}
+
+body {
+  font-family: var(--fontFamily);
+}
+
+.modal-open{
+  overflow: hidden;
 }
 
 a{
@@ -82,6 +94,8 @@ a{
 
 .logo{
   color: var(--colorePrimario);
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .bounce-animation {

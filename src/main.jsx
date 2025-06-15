@@ -1,10 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './css/index.css'
-import App from './components/App.jsx'
+import ReactModal from "react-modal";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./css/index.css";
+import App from "./components/App.jsx";
 
-createRoot(document.getElementById('root')).render(
+ReactModal.setAppElement("#root");
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-  </StrictMode>,
-)
+  </StrictMode>
+);

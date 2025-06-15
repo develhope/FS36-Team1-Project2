@@ -1,6 +1,8 @@
  :root{
-    --gap: 12px;
+    --gap: 1.25rem;
     --active-page-height: 0.313rem;
+    --hr-margin: 0.625rem;
+    --div-width-adjust: 1.25rem;
 }
 
 
@@ -45,7 +47,7 @@
     }
 
     header > :first-child{
-        min-width: 1824px;
+        min-width: 114rem;
         margin: 0 auto;
     }
 }
@@ -56,7 +58,7 @@ header{
 
 nav {
     gap: var(--gap);
-    width: 440px;
+    width: 27.5rem;
 }
 
 nav > div > a > span {
@@ -82,9 +84,9 @@ div > a {
     gap: var(--gap);
 }
 .header-button-container > a {
-    width: 103px;
-    height: 16px;
-    border-radius: 9999px;
+    width: 7.063rem;
+    height: 1rem;
+    border-radius: 1.563rem;
     padding: 1rem;
 }
 
@@ -97,11 +99,15 @@ div > a {
     animation: expandWidth 0.5s ease forwards;
     height: var(--active-page-height);
     background-color: var(--neroPrincipale);
-    margin: 5px;
+    margin: 0.313rem;
 }
 
 .icon-height-adjust {
     padding: var(--active-page-height) 0 0 0;
+}
+
+header > div:first-of-type{
+    margin: 0 0 1.875rem 0;
 }
 
 @keyframes expandWidth {
@@ -109,6 +115,60 @@ div > a {
     width: 0;
   }
   100% {
-    width: 100px;
+    width: 6.25rem;
   }
+}
+
+#guest{
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 18.75rem;
+    height: 26.875rem;
+    border-radius: 0.625rem;
+    right: 0;
+    top: 3.75rem;
+    padding: 1.25rem 0;
+    box-shadow: var(--shadow-dark-container);   
+    font-size: 1.25rem;
+    z-index: 2;
+}
+
+#guest hr{
+    border: 0.063rem solid var(--hoverSearch);
+    box-sizing: border-box;
+    width: calc(100% - calc(2*var(--hr-margin)));
+    margin: var(--hr-margin);
+}
+
+#guest li {
+    all: unset;
+    padding: 0.938rem var(--div-width-adjust);
+    width: calc(100% - calc(2 * var(--div-width-adjust)));
+}
+
+#guest li:hover {
+    background-color: var(--hoverSearch);
+    cursor: pointer;
+}
+
+#guest li:first-of-type > a {
+    padding: 0 0 0 1.875rem;
+}
+
+#guest li > svg {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 1.188rem;
+    top: 2.125rem;
+}
+
+    button {
+    all: unset;
+}
+
+#guest button > small{
+    color: var(--testiGrigi);    
+    width: 9.375rem;
+    padding: 0 1.25rem 0 0;
 }
