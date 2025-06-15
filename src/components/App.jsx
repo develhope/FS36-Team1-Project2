@@ -1,13 +1,8 @@
-import Modal from './Modal';
-import SwiperComponent from './SwiperComponent';
+import Modal from "./Modal";
+import SwiperComponent from "./SwiperComponent";
 
 function App() {
-  return (
-    <>
-      <SwiperComponent />
-      <Modal />
-    </>
-  )
+  return;
 }
 
 export default App;

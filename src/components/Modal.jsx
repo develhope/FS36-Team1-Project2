@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "../css/Modal.module.css";
 import { Icons } from "../models/Icons";
 import ReactModal from "react-modal";
@@ -14,6 +14,10 @@ function Modal({ host, language, heart, onClose }) {
   const hostIconsClasses = `flex flex-col justify-center align-center ${style["icon"]}`;
 
   const customHeartStyles = {
+    overlay: {
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: 1000,
+    },
     content: {
       top: "50%",
       left: "50%",
@@ -22,6 +26,8 @@ function Modal({ host, language, heart, onClose }) {
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
       border: "none",
+      zIndex: 1001,
+      background: "transparent",
     },
   };
 
@@ -29,6 +35,15 @@ function Modal({ host, language, heart, onClose }) {
     setActiveId(null);
     onClose();
   }
+
+  useEffect(() => {
+    if (host || language || heart) {
+      document.body.classList.add("modal-open");
+    }
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  }, [host, language, heart]);
 
   return (
     <>
