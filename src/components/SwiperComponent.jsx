@@ -32,6 +32,18 @@ function SwiperComponent() {
     budapest: null,
   });
 
+  const cityTitles = {
+    Milano: "Milano: alloggi popolari",
+    Roma: "Roma: disponibili questo week end >",
+    Napoli: "Napoli: alloggi >",
+    Torino: "Torino: disponibili il prossimo mese >",
+    Barcellona: "Barcellona: alloggi >",
+    Parigi: "Parigi: disponibili il prossimo mese >",
+    Bologna: "Bologna: tutti gli alloggi disponibili >",
+    Firenze: "Firenze: scopri gli alloggi >",
+    Budapest: "Budapest: alloggi popolari >",
+  };
+
   return (
     <>
       <div>
@@ -45,20 +57,23 @@ function SwiperComponent() {
         ></div>
 
         <div id="swiper-milano">
-          <Button
-            onClick={() => swiper.milano && swiper.milano.slidePrev()}
-            className="btn-prev"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.LeftArrow />}
-          />
-          <Button
-            onClick={() => swiper.milano && swiper.milano.slideNext()}
-            className="btn-next"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.RightArrow />}
-          />
+          {cityTitles.Milano}
+          <div className="btn-container">
+            <Button
+              onClick={() => swiper.milano && swiper.milano.slideNext()}
+              className="btn-next"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.RightArrow />}
+            />
+            <Button
+              onClick={() => swiper.milano && swiper.milano.slidePrev()}
+              className="btn-prev"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.LeftArrow />}
+            />
+          </div>
           <Swiper
             modules={[Pagination]}
             slidesPerView={7}
@@ -67,6 +82,7 @@ function SwiperComponent() {
             }
             speed={800}
             id="swiper-milano"
+            spaceBetween={10}
           >
             {milanoData.map((slides, i) => (
               <SwiperSlide key={i}>
@@ -84,20 +100,22 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-roma">
-          <Button
-            onClick={() => swiper.roma && swiper.roma.slidePrev()}
-            className="btn-prev"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.LeftArrow />}
-          />
-          <Button
-            onClick={() => swiper.roma && swiper.roma.slideNext()}
-            className="btn-next"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.RightArrow />}
-          />
+          <div className="btn-container">
+            <Button
+              onClick={() => swiper.roma && swiper.roma.slideNext()}
+              className="btn-next"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.RightArrow />}
+            />
+            <Button
+              onClick={() => swiper.roma && swiper.roma.slidePrev()}
+              className="btn-prev"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.LeftArrow />}
+            />
+          </div>
           <Swiper
             modules={[Pagination]}
             slidesPerView={7}
@@ -105,6 +123,7 @@ function SwiperComponent() {
               setSwiper((prev) => ({ ...prev, roma: swiperInstance }))
             }
             speed={800}
+            spaceBetween={10}
           >
             {romaData.map((slides, i) => (
               <SwiperSlide key={i}>
@@ -122,20 +141,22 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-torino">
-          <Button
-            onClick={() => swiper.torino && swiper.torino.slidePrev()}
-            className="btn-prev"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.LeftArrow />}
-          />
-          <Button
-            onClick={() => swiper.torino && swiper.torino.slideNext()}
-            className="btn-next"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.RightArrow />}
-          />
+          <div className="btn-container">
+            <Button
+              onClick={() => swiper.torino && swiper.torino.slideNext()}
+              className="btn-next"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.RightArrow />}
+            />
+            <Button
+              onClick={() => swiper.torino && swiper.torino.slidePrev()}
+              className="btn-prev"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.LeftArrow />}
+            />
+          </div>
           <Swiper
             modules={[Pagination]}
             slidesPerView={7}
@@ -143,6 +164,7 @@ function SwiperComponent() {
               setSwiper((prev) => ({ ...prev, torino: swiperInstance }))
             }
             speed={800}
+            spaceBetween={10}
           >
             {torinoData.map((slides, i) => (
               <SwiperSlide key={i}>
@@ -160,20 +182,22 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-napoli">
-          <Button
-            onClick={() => swiper.napoli && swiper.napoli.slidePrev()}
-            className="btn-prev"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.LeftArrow />}
-          />
-          <Button
-            onClick={() => swiper.napoli && swiper.napoli.slideNext()}
-            className="btn-next"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.RightArrow />}
-          />
+          <div className="btn-container">
+            <Button
+              onClick={() => swiper.napoli && swiper.napoli.slideNext()}
+              className="btn-next"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.RightArrow />}
+            />
+            <Button
+              onClick={() => swiper.napoli && swiper.napoli.slidePrev()}
+              className="btn-prev"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.LeftArrow />}
+            />
+          </div>
           <Swiper
             modules={[Pagination]}
             slidesPerView={7}
@@ -181,6 +205,7 @@ function SwiperComponent() {
               setSwiper((prev) => ({ ...prev, napoli: swiperInstance }))
             }
             speed={800}
+            spaceBetween={10}
           >
             {napoliData.map((slides, i) => (
               <SwiperSlide key={i}>
@@ -198,20 +223,22 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-barcellona">
-          <Button
-            onClick={() => swiper.barcellona && swiper.barcellona.slidePrev()}
-            className="btn-prev"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.LeftArrow />}
-          />
-          <Button
-            onClick={() => swiper.barcellona && swiper.barcellona.slideNext()}
-            className="btn-next"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.RightArrow />}
-          />
+          <div className="btn-container">
+            <Button
+              onClick={() => swiper.barcellona && swiper.barcellona.slideNext()}
+              className="btn-next"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.RightArrow />}
+            />
+            <Button
+              onClick={() => swiper.barcellona && swiper.barcellona.slidePrev()}
+              className="btn-prev"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.LeftArrow />}
+            />
+          </div>
           <Swiper
             modules={[Pagination]}
             slidesPerView={7}
@@ -219,6 +246,7 @@ function SwiperComponent() {
               setSwiper((prev) => ({ ...prev, barcellona: swiperInstance }))
             }
             speed={800}
+            spaceBetween={10}
           >
             {barcellonaData.map((slides, i) => (
               <SwiperSlide key={i}>
@@ -236,20 +264,22 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-parigi">
-          <Button
-            onClick={() => swiper.parigi && swiper.parigi.slidePrev()}
-            className="btn-prev"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.LeftArrow />}
-          />
-          <Button
-            onClick={() => swiper.parigi && swiper.parigi.slideNext()}
-            className="btn-next"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.RightArrow />}
-          />
+          <div className="btn-container">
+            <Button
+              onClick={() => swiper.parigi && swiper.parigi.slideNext()}
+              className="btn-next"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.RightArrow />}
+            />
+            <Button
+              onClick={() => swiper.parigi && swiper.parigi.slidePrev()}
+              className="btn-prev"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.LeftArrow />}
+            />
+          </div>
           <Swiper
             modules={[Pagination]}
             slidesPerView={7}
@@ -257,6 +287,7 @@ function SwiperComponent() {
               setSwiper((prev) => ({ ...prev, parigi: swiperInstance }))
             }
             speed={800}
+            spaceBetween={10}
           >
             {parigiData.map((slides, i) => (
               <SwiperSlide key={i}>
@@ -274,20 +305,22 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-bologna">
-          <Button
-            onClick={() => swiper.bologna && swiper.bologna.slidePrev()}
-            className="btn-prev"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.LeftArrow />}
-          />
-          <Button
-            onClick={() => swiper.bologna && swiper.bologna.slideNext()}
-            className="btn-next"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.RightArrow />}
-          />
+          <div className="btn-container">
+            <Button
+              onClick={() => swiper.bologna && swiper.bologna.slideNext()}
+              className="btn-next"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.RightArrow />}
+            />
+            <Button
+              onClick={() => swiper.bologna && swiper.bologna.slidePrev()}
+              className="btn-prev"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.LeftArrow />}
+            />
+          </div>
           <Swiper
             modules={[Pagination]}
             slidesPerView={7}
@@ -295,6 +328,7 @@ function SwiperComponent() {
               setSwiper((prev) => ({ ...prev, bologna: swiperInstance }))
             }
             speed={800}
+            spaceBetween={10}
           >
             {bolognaData.map((slides, i) => (
               <SwiperSlide key={i}>
@@ -312,20 +346,22 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-firenze">
-          <Button
-            onClick={() => swiper.firenze && swiper.firenze.slidePrev()}
-            className="btn-prev"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.LeftArrow />}
-          />
-          <Button
-            onClick={() => swiper.firenze && swiper.firenze.slideNext()}
-            className="btn-next"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.RightArrow />}
-          />
+          <div className="btn-container">
+            <Button
+              onClick={() => swiper.firenze && swiper.firenze.slideNext()}
+              className="btn-next"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.RightArrow />}
+            />
+            <Button
+              onClick={() => swiper.firenze && swiper.firenze.slidePrev()}
+              className="btn-prev"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.LeftArrow />}
+            />
+          </div>
           <Swiper
             modules={[Pagination]}
             slidesPerView={7}
@@ -333,6 +369,7 @@ function SwiperComponent() {
               setSwiper((prev) => ({ ...prev, firenze: swiperInstance }))
             }
             speed={800}
+            spaceBetween={10}
           >
             {firenzeData.map((slides, i) => (
               <SwiperSlide key={i}>
@@ -350,20 +387,22 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-budapest">
-          <Button
-            onClick={() => swiper.budapest && swiper.budapest.slidePrev()}
-            className="btn-prev"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.LeftArrow />}
-          />
-          <Button
-            onClick={() => swiper.budapest && swiper.budapest.slideNext()}
-            className="btn-next"
-            size={Size.Sm}
-            color={Color.First}
-            icon={<Icons.RightArrow />}
-          />
+          <div className="btn-container">
+            <Button
+              onClick={() => swiper.budapest && swiper.budapest.slideNext()}
+              className="btn-next"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.RightArrow />}
+            />
+            <Button
+              onClick={() => swiper.budapest && swiper.budapest.slidePrev()}
+              className="btn-prev"
+              size={Size.Sm}
+              color={Color.First}
+              icon={<Icons.LeftArrow />}
+            />
+          </div>
           <Swiper
             modules={[Pagination]}
             slidesPerView={7}
@@ -371,6 +410,7 @@ function SwiperComponent() {
               setSwiper((prev) => ({ ...prev, budapest: swiperInstance }))
             }
             speed={800}
+            spaceBetween={10}
           >
             {budapestData.map((slides, i) => (
               <SwiperSlide key={i}>

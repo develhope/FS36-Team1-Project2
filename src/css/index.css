@@ -119,3 +119,9 @@ a {
     transform: scale(1.05);
   }
 }
+
+.btn-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+}
