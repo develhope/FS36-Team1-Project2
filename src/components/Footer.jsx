@@ -33,6 +33,36 @@ export function Footer() {
     : mainList[activeSection]?.slice(0, 17);
   return (
     <>
+      <div className="flex">
+        {sections.map((section, index) => (
+          <section key={index}>
+            <h3>{section.title}</h3>
+            <div className="flex">
+              {section.list && (
+                <ul className="flex flex-col justify-center">
+                  {section.list.map((item, itemIndex) => (
+                    <li
+                      className="flex flex-col justify-center"
+                      key={itemIndex}
+                    >
+                      <span>{item.key}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {section.host && (
+                <ul className="flex flex-col justify-center">
+                  {section.host.map((item, itemIndex) => (
+                    <li key={itemIndex}>
+                      <span>{item.key}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </section>
+        ))}
+      </div>
       <hr />
       <div className="flex justify-between">
         <div className="flex align-center">
