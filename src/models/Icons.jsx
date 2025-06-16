@@ -5,25 +5,20 @@ import { CiCalendar } from "react-icons/ci";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { FaPlusMinus } from "react-icons/fa6";
 import { RiSearchLine } from "react-icons/ri";
-import { GoPlusCircle } from "react-icons/go";
+import { GoHeartFill, GoPlusCircle } from "react-icons/go";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { LiaConciergeBellSolid } from "react-icons/lia";
 import { LuCalendarFold, LuGlobe } from "react-icons/lu";
 import { HiOutlineQuestionMarkCircle } from "react-icons/hi";
 import { TbAirBalloon, TbCurrencyEuro } from "react-icons/tb";
 import { TfiArrowCircleLeft, TfiArrowCircleRight } from "react-icons/tfi";
-import { GoHeart } from "react-icons/go";
 import {
   AiOutlineLoading3Quarters,
   AiOutlineMinusCircle,
   AiOutlineX,
   AiTwotoneCopyrightCircle,
 } from "react-icons/ai";
-import {
-  MdGTranslate,
-  MdOutlineArrowBackIosNew,
-  MdOutlineArrowForwardIos,
-} from "react-icons/md";
+import { MdGTranslate, MdOutlineArrowBackIosNew } from "react-icons/md";
 import {
   IoIosArrowDown,
   IoIosArrowForward,
@@ -36,12 +31,12 @@ import {
 export const Icons = {
   Share: FiShare,
   Globe: LuGlobe,
-  Heart: GoHeart,
   Star: IoIosStar,
   Meta: AiOutlineX,
   House: BiHomeAlt2,
   Close: IoIosClose,
   Position: BsGeoAlt,
+  Heart: GoHeartFill,
   Euro: TbCurrencyEuro,
   Calendar: CiCalendar,
   Search: RiSearchLine,
