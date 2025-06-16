@@ -13,6 +13,7 @@ import {
   categories,
   sections,
 } from "../locale/footerConfig";
+import "../css/footer.css";
 
 export function Footer() {
   const [showMore, setShowMore] = useState(false);
@@ -38,9 +39,11 @@ export function Footer() {
           <h2>Ispirazione per Viaggi futuri</h2>
           <div className="flex flex-col">
             <div className="flex" id="button-container">
-              <button onClick={() => setActiveSection("popular")}>
-                Popolari
-              </button>
+              <div>
+                <button onClick={() => setActiveSection("popular")}>
+                  Popolari
+                </button>
+              </div>
               <button onClick={() => setActiveSection("coastal")}>
                 Sul litorale
               </button>
@@ -67,7 +70,7 @@ export function Footer() {
                 </li>
               ))}
               {activeSection !== "category" && (
-                <li className="flex" id="show-more">
+                <li className="flex align-center" id="show-more">
                   <button onClick={() => setShowMore((prev) => !prev)}>
                     {showMore ? (
                       <>
@@ -126,6 +129,7 @@ export function Footer() {
             <a href="#"> Dettagli dell'azienda </a>
           </div>
           <div className="flex align-center" id="link-container">
+            {/* mettere onClick a questi button per le modali */}
             <Button size={Size.Xs} color={Color.Fifth} bounce={true}>
               <span>Italiano(IT)</span>
             </Button>
@@ -137,7 +141,7 @@ export function Footer() {
             >
               <span>EUR</span>
             </Button>
-            <div className="flex" id="links">
+            <div className="flex align-center" id="links">
               <a href="#" className="flex align-center justify-center">
                 <Icons.Facebook />
               </a>

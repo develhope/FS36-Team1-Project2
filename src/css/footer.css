@@ -1,0 +1,77 @@
+:root{
+    --desktop-list-with: 1830px;
+    --desktop-list-height:1030px
+}
+
+footer {
+    width: 100vw;
+    background: linear-gradient(180deg,#ffffff 39.9%,#f8f8f8 100%);
+}
+
+footer > div {
+    width: 1830px;
+}
+
+footer #button-container {
+    margin: 30px 0 10px ;
+    gap: 20px;
+    height: 40px;
+}
+
+footer button{
+    all: unset;
+    height: inherit;
+}
+
+footer div div ul{
+    width: inherit;
+    flex-wrap: wrap;
+}
+
+footer div div ul li{
+    width: calc(var(--desktop-list-with) / 6);
+    height: calc(var(--desktop-list-height) / 17);
+}
+
+footer div div ul li small{
+    color: var(--testiGrigi);
+}
+
+footer #show-more svg{
+    margin: 0 0 0 5px;
+}
+
+footer div section{
+    width: calc(var(--desktop-list-with) / 3);
+    margin: 100px 0 0 0;
+}
+
+footer #bottom-side div{
+    gap: 10px;
+    height: 90px;
+}
+
+footer #link-container {
+    gap: 20px
+}
+
+footer #link-container button{
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+
+footer #link-container #links{
+    gap: 20px;
+    font-size: 20px;
+}
+
+footer #link-container #links a{
+    height: fit-content;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+footer #link-container #links a:hover{
+    background-color: var(--testiGrigi);
+}

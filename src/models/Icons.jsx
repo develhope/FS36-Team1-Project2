@@ -1,6 +1,7 @@
 import { FiShare } from "react-icons/fi";
 import { BsGeoAlt } from "react-icons/bs";
 import { SiAirbnb } from "react-icons/si";
+import { FaFacebook } from "react-icons/fa";
 import { CiCalendar } from "react-icons/ci";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { FaPlusMinus } from "react-icons/fa6";
@@ -25,7 +26,6 @@ import {
   IoIosArrowUp,
   IoIosClose,
   IoIosStar,
-  IoLogoFacebook,
   IoLogoInstagram,
 } from "react-icons/io";
 export const Icons = {
@@ -44,7 +44,7 @@ export const Icons = {
   UpArrow: IoIosArrowUp,
   PlusMinus: FaPlusMinus,
   Translate: MdGTranslate,
-  Facebook: IoLogoFacebook,
+  Facebook: FaFacebook,
   AirBalloon: TbAirBalloon,
   PlusCircle: GoPlusCircle,
   DownArrow: IoIosArrowDown,
