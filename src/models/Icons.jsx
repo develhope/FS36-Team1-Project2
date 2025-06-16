@@ -25,7 +25,9 @@ import {
   MdOutlineArrowForwardIos,
 } from "react-icons/md";
 import {
+  IoIosArrowDown,
   IoIosArrowForward,
+  IoIosArrowUp,
   IoIosClose,
   IoIosStar,
   IoLogoFacebook,
@@ -44,11 +46,13 @@ export const Icons = {
   Calendar: CiCalendar,
   Search: RiSearchLine,
   AirBnbLogo: SiAirbnb,
+  UpArrow: IoIosArrowUp,
   PlusMinus: FaPlusMinus,
   Translate: MdGTranslate,
   Facebook: IoLogoFacebook,
   AirBalloon: TbAirBalloon,
   PlusCircle: GoPlusCircle,
+  DownArrow: IoIosArrowDown,
   Hamburger: RxHamburgerMenu,
   Instagram: IoLogoInstagram,
   Bell: LiaConciergeBellSolid,
