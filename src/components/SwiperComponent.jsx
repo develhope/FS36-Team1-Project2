@@ -34,14 +34,14 @@ function SwiperComponent() {
 
   const cityTitles = {
     Milano: "Milano: alloggi popolari",
-    Roma: "Roma: disponibili questo week end >",
-    Napoli: "Napoli: alloggi >",
-    Torino: "Torino: disponibili il prossimo mese >",
-    Barcellona: "Barcellona: alloggi >",
-    Parigi: "Parigi: disponibili il prossimo mese >",
-    Bologna: "Bologna: tutti gli alloggi disponibili >",
-    Firenze: "Firenze: scopri gli alloggi >",
-    Budapest: "Budapest: alloggi popolari >",
+    Roma: "Roma: disponibili questo week end",
+    Napoli: "Napoli: alloggi",
+    Torino: "Torino: disponibili il prossimo mese",
+    Barcellona: "Barcellona: alloggi",
+    Parigi: "Parigi: disponibili il prossimo mese",
+    Bologna: "Bologna: tutti gli alloggi disponibili",
+    Firenze: "Firenze: scopri gli alloggi",
+    Budapest: "Budapest: alloggi popolari",
   };
 
   return (
