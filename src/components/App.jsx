@@ -1,5 +1,7 @@
+import { Footer } from "./Footer";
+
 function App() {
-  return <></>;
+  return <Footer />;
 }
 
 export default App;
