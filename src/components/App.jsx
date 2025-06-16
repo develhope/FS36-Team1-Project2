@@ -1,8 +1,17 @@
+import { useState } from "react";
 import Modal from "./Modal";
 import SwiperComponent from "./SwiperComponent";
 
 function App() {
-  return;
+  const [openModal, setOpenModal] = useState(null);
+
+  return (
+    <>
+      <button onClick={() => setOpenModal((prev) => !prev)}>CLICCAMI</button>
+      <SwiperComponent />
+      <Modal heart={openModal} onClose={() => setOpenModal(false)} />
+    </>
+  );
 }
 
 export default App;
