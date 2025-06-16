@@ -1,7 +1,0 @@
-.app-container {
-  display: flex;
-  flex-direction: column; /* Disposizione verticale delle città */
-  align-items: flex-start;
-  gap: 40px;
-  padding: 20px;
-}
