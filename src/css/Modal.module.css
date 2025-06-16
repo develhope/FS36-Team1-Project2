@@ -3,8 +3,8 @@
   --test-rosa: #fc6480;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 .modal-centered {
@@ -42,7 +42,7 @@
   background-color: white;
   border-radius: 3.125rem;
   padding: 2rem;
-  box-shadow: var(--shadow-dark-container)
+  box-shadow: var(--shadow-dark-container);
 }
 
 #host > div {
@@ -163,11 +163,11 @@
   margin: 1.25rem 0;
 }
 
-#language > .list-section > ul{
+#language > .list-section > ul {
   height: 41.875rem;
 }
 
-#language > .list-section > ul > li{
+#language > .list-section > ul > li {
   height: 10%;
 }
 

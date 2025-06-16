@@ -60,4 +60,4 @@ export const Icons = {
   LeftArrow: MdOutlineArrowBackIosNew,
   RightArrowCircle: TfiArrowCircleRight,
   Question: HiOutlineQuestionMarkCircle,
-};
+}; 

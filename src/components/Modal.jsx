@@ -27,7 +27,7 @@ function Modal({ host, language, heart, onClose }) {
       transform: "translate(-50%, -50%)",
       border: "none",
       zIndex: 1001,
-      background: "transparent",
+      background: "trasparent"
     },
   };
 
@@ -61,16 +61,16 @@ function Modal({ host, language, heart, onClose }) {
         </button>
         <h2 className="flex justify-center">Cosa vorresti offrire?</h2>
         <div className="flex">
-          {iconConfig.map((element) => (
+          {iconConfig.map(({ id, Icon, label }) => (
             <div
-              key={element.id}
-              onClick={() => setActiveId(element.id)}
+              key={id}
+              onClick={() => setActiveId(id)}
               className={`${hostIconsClasses} ${
-                activeId === element.id ? style["active"] : ""
+                activeId === id ? style["active"] : ""
               }`}
             >
-              <element.Icon />
-              <span>{element.label}</span>
+              <Icon className="logo" />
+              <span>{label}</span>
             </div>
           ))}
         </div>
@@ -146,7 +146,7 @@ function Modal({ host, language, heart, onClose }) {
               <h3> Scegli una valuta </h3>
               <ul className={`flex ${style["list"]}`}>
                 {selectCurrencyConfig.map(({ id, currency, label }) => (
-                  <li key={id} className="flex flex-col">
+                  <li key={id} className="flex flex-col justify-center">
                     <span>{currency}</span>
                     <small>{label}</small>
                   </li>
@@ -161,6 +161,7 @@ function Modal({ host, language, heart, onClose }) {
         isOpen={heart}
         style={customHeartStyles}
         onRequestClose={handleButtonClose}
+
       >
         <form id={style["form-cuore"]}>
           <div id={style["form-container"]}>
@@ -501,4 +502,4 @@ function Modal({ host, language, heart, onClose }) {
   );
 }
 
-export default Modal;
+export default Modal
