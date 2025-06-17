@@ -6,7 +6,8 @@
     left: -1.25rem;
     box-shadow: var(--shadow-light-container);
     border-radius: 1.25rem;
-    padding: 1.875rem
+    padding: 1.875rem;
+    z-index: 2;
 }
 
 .mySelected {

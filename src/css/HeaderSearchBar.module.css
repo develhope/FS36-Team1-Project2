@@ -26,7 +26,7 @@
     border-radius: inherit;
     box-sizing: border-box;
     padding: 1rem 2rem;
-    position: relative;   
+    position: relative;
 }
 
 
@@ -97,7 +97,7 @@
   top: 5rem;
   left: 0;
   background-color: rgb(255, 255, 255);
-  box-shadow: var(--shadow-light-container); 
+  box-shadow: var(--shadow-light-container);
   z-index: 2;
 }
 
@@ -112,7 +112,7 @@
   font-size: 0.875rem;
 }
 
-#where .where-section li, 
+#where .where-section li,
 #where .where-section > small{
   margin: 0 1rem;
   padding: 0.5rem;
@@ -143,10 +143,11 @@
   padding: 2rem 3.5rem;
   background: white;
   box-shadow: var(--shadow-light-container);
-  border-radius: 1.875rem; 
+  border-radius: 1.875rem;
   position: absolute;
   top: 5rem;
   right: 0;
+  z-index: 2;
 }
 
 #who section > div {

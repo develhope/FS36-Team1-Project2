@@ -62,7 +62,7 @@ export function Header() {
             <div className={`${style["icon-height-adjust"]}`}>
               <a className="flex justify-center align-center" href="#">
                 <Icons.AirBalloon className="logo" />
-                <span className="header-text-size">Eserienze</span>
+                <span className="header-text-size">Esperienze</span>
               </a>
               {/* <div className={`${style["active-page"]}`}></div> */}
             </div>
