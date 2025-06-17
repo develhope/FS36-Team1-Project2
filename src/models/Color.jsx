@@ -3,4 +3,5 @@ export const Color = {
   Second: "pink",
   Third: "dark-gray",
   Fourth: "white",
+  Fifth: "transparent",
 };

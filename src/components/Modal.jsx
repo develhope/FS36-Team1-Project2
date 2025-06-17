@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "../css/Modal.module.css";
 import { Icons } from "../models/Icons";
 import ReactModal from "react-modal";
@@ -14,6 +14,10 @@ function Modal({ host, language, heart, onClose }) {
   const hostIconsClasses = `flex flex-col justify-center align-center ${style["icon"]}`;
 
   const customHeartStyles = {
+    overlay: {
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: 1000,
+    },
     content: {
       top: "50%",
       left: "50%",
@@ -22,6 +26,7 @@ function Modal({ host, language, heart, onClose }) {
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
       border: "none",
+      zIndex: 1001,
     },
   };
 
@@ -29,6 +34,15 @@ function Modal({ host, language, heart, onClose }) {
     setActiveId(null);
     onClose();
   }
+
+  useEffect(() => {
+    if (host || language || heart) {
+      document.body.classList.add("modal-open");
+    }
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  }, [host, language, heart]);
 
   return (
     <>
@@ -46,16 +60,16 @@ function Modal({ host, language, heart, onClose }) {
         </button>
         <h2 className="flex justify-center">Cosa vorresti offrire?</h2>
         <div className="flex">
-          {iconConfig.map((element) => (
+          {iconConfig.map(({ id, Icon, label }) => (
             <div
-              key={element.id}
-              onClick={() => setActiveId(element.id)}
+              key={id}
+              onClick={() => setActiveId(id)}
               className={`${hostIconsClasses} ${
-                activeId === element.id ? style["active"] : ""
+                activeId === id ? style["active"] : ""
               }`}
             >
-              <element.Icon />
-              <span>{element.label}</span>
+              <Icon className="logo" />
+              <span>{label}</span>
             </div>
           ))}
         </div>
@@ -131,7 +145,7 @@ function Modal({ host, language, heart, onClose }) {
               <h3> Scegli una valuta </h3>
               <ul className={`flex ${style["list"]}`}>
                 {selectCurrencyConfig.map(({ id, currency, label }) => (
-                  <li key={id} className="flex flex-col">
+                  <li key={id} className="flex flex-col justify-center">
                     <span>{currency}</span>
                     <small>{label}</small>
                   </li>
@@ -486,4 +500,4 @@ function Modal({ host, language, heart, onClose }) {
   );
 }
 
-export default Modal;
+export default Modal
