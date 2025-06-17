@@ -5,7 +5,12 @@ import SwiperComponent from "./SwiperComponent.jsx";
 function App() {
 	return <>
 		<Header />
-		<SwiperComponent />
+		<div style={{
+			padding: "0 50px",
+			overflow: "hidden"
+		}}>
+			<SwiperComponent />
+		</div>
 		<Footer />
 	</>
 }
