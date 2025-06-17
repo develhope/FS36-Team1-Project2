@@ -57,22 +57,29 @@ function SwiperComponent() {
         ></div>
 
         <div id="swiper-milano">
-          {cityTitles.Milano}
-          <div className="btn-container">
-            <Button
-              onClick={() => swiper.milano && swiper.milano.slideNext()}
-              className="btn-next"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.RightArrow />}
-            />
-            <Button
-              onClick={() => swiper.milano && swiper.milano.slidePrev()}
-              className="btn-prev"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.LeftArrow />}
-            />
+          <div
+            className="flex justify-between align-center"
+            style={{ marginBottom: "10px" }}
+          >
+            <h3 style={{ fontWeight: "600" }}>
+              {cityTitles.Milano} <Icons.RightArrow size={"0.8rem"} />
+            </h3>
+            <div className="btn-container">
+              <Button
+                onClick={() => swiper.milano && swiper.milano.slideNext()}
+                className="btn-next"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.RightArrow />}
+              />
+              <Button
+                onClick={() => swiper.milano && swiper.milano.slidePrev()}
+                className="btn-prev"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.LeftArrow />}
+              />
+            </div>
           </div>
           <Swiper
             modules={[Pagination]}
@@ -100,21 +107,29 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-roma">
-          <div className="btn-container">
-            <Button
-              onClick={() => swiper.roma && swiper.roma.slideNext()}
-              className="btn-next"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.RightArrow />}
-            />
-            <Button
-              onClick={() => swiper.roma && swiper.roma.slidePrev()}
-              className="btn-prev"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.LeftArrow />}
-            />
+          <div
+            className="flex justify-between align-center"
+            style={{ marginBottom: "10px" }}
+          >
+            <h3 style={{ fontWeight: "600" }}>
+              {cityTitles.Roma} <Icons.RightArrow size={"0.8rem"} />
+            </h3>
+            <div className="btn-container">
+              <Button
+                onClick={() => swiper.roma && swiper.roma.slideNext()}
+                className="btn-next"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.RightArrow />}
+              />
+              <Button
+                onClick={() => swiper.roma && swiper.roma.slidePrev()}
+                className="btn-prev"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.LeftArrow />}
+              />
+            </div>
           </div>
           <Swiper
             modules={[Pagination]}
@@ -141,21 +156,29 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-torino">
-          <div className="btn-container">
-            <Button
-              onClick={() => swiper.torino && swiper.torino.slideNext()}
-              className="btn-next"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.RightArrow />}
-            />
-            <Button
-              onClick={() => swiper.torino && swiper.torino.slidePrev()}
-              className="btn-prev"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.LeftArrow />}
-            />
+          <div
+            className="flex justify-between align-center"
+            style={{ marginBottom: "10px" }}
+          >
+            <h3 style={{ fontWeight: "600" }}>
+              {cityTitles.Torino} <Icons.RightArrow size={"0.8rem"} />
+            </h3>
+            <div className="btn-container">
+              <Button
+                onClick={() => swiper.torino && swiper.torino.slideNext()}
+                className="btn-next"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.RightArrow />}
+              />
+              <Button
+                onClick={() => swiper.torino && swiper.torino.slidePrev()}
+                className="btn-prev"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.LeftArrow />}
+              />
+            </div>
           </div>
           <Swiper
             modules={[Pagination]}
@@ -182,21 +205,29 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-napoli">
-          <div className="btn-container">
-            <Button
-              onClick={() => swiper.napoli && swiper.napoli.slideNext()}
-              className="btn-next"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.RightArrow />}
-            />
-            <Button
-              onClick={() => swiper.napoli && swiper.napoli.slidePrev()}
-              className="btn-prev"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.LeftArrow />}
-            />
+          <div
+            className="flex justify-between align-center"
+            style={{ marginBottom: "10px" }}
+          >
+            <h3 style={{ fontWeight: "600" }}>
+              {cityTitles.Napoli} <Icons.RightArrow size={"0.8rem"} />
+            </h3>
+            <div className="btn-container">
+              <Button
+                onClick={() => swiper.napoli && swiper.napoli.slideNext()}
+                className="btn-next"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.RightArrow />}
+              />
+              <Button
+                onClick={() => swiper.napoli && swiper.napoli.slidePrev()}
+                className="btn-prev"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.LeftArrow />}
+              />
+            </div>
           </div>
           <Swiper
             modules={[Pagination]}
@@ -223,21 +254,33 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-barcellona">
-          <div className="btn-container">
-            <Button
-              onClick={() => swiper.barcellona && swiper.barcellona.slideNext()}
-              className="btn-next"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.RightArrow />}
-            />
-            <Button
-              onClick={() => swiper.barcellona && swiper.barcellona.slidePrev()}
-              className="btn-prev"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.LeftArrow />}
-            />
+          <div
+            className="flex justify-between align-center"
+            style={{ marginBottom: "10px" }}
+          >
+            <h3 style={{ fontWeight: "600" }}>
+              {cityTitles.Barcellona} <Icons.RightArrow size={"0.8rem"} />
+            </h3>
+            <div className="btn-container">
+              <Button
+                onClick={() =>
+                  swiper.barcellona && swiper.barcellona.slideNext()
+                }
+                className="btn-next"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.RightArrow />}
+              />
+              <Button
+                onClick={() =>
+                  swiper.barcellona && swiper.barcellona.slidePrev()
+                }
+                className="btn-prev"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.LeftArrow />}
+              />
+            </div>
           </div>
           <Swiper
             modules={[Pagination]}
@@ -264,21 +307,29 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-parigi">
-          <div className="btn-container">
-            <Button
-              onClick={() => swiper.parigi && swiper.parigi.slideNext()}
-              className="btn-next"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.RightArrow />}
-            />
-            <Button
-              onClick={() => swiper.parigi && swiper.parigi.slidePrev()}
-              className="btn-prev"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.LeftArrow />}
-            />
+          <div
+            className="flex justify-between align-center"
+            style={{ marginBottom: "10px" }}
+          >
+            <h3 style={{ fontWeight: "600" }}>
+              {cityTitles.Parigi} <Icons.RightArrow size={"0.8rem"} />
+            </h3>
+            <div className="btn-container">
+              <Button
+                onClick={() => swiper.parigi && swiper.parigi.slideNext()}
+                className="btn-next"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.RightArrow />}
+              />
+              <Button
+                onClick={() => swiper.parigi && swiper.parigi.slidePrev()}
+                className="btn-prev"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.LeftArrow />}
+              />
+            </div>
           </div>
           <Swiper
             modules={[Pagination]}
@@ -305,21 +356,29 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-bologna">
-          <div className="btn-container">
-            <Button
-              onClick={() => swiper.bologna && swiper.bologna.slideNext()}
-              className="btn-next"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.RightArrow />}
-            />
-            <Button
-              onClick={() => swiper.bologna && swiper.bologna.slidePrev()}
-              className="btn-prev"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.LeftArrow />}
-            />
+          <div
+            className="flex justify-between align-center"
+            style={{ marginBottom: "10px" }}
+          >
+            <h3 style={{ fontWeight: "600" }}>
+              {cityTitles.Bologna} <Icons.RightArrow size={"0.8rem"} />
+            </h3>
+            <div className="btn-container">
+              <Button
+                onClick={() => swiper.bologna && swiper.bologna.slideNext()}
+                className="btn-next"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.RightArrow />}
+              />
+              <Button
+                onClick={() => swiper.bologna && swiper.bologna.slidePrev()}
+                className="btn-prev"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.LeftArrow />}
+              />
+            </div>
           </div>
           <Swiper
             modules={[Pagination]}
@@ -346,21 +405,29 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-firenze">
-          <div className="btn-container">
-            <Button
-              onClick={() => swiper.firenze && swiper.firenze.slideNext()}
-              className="btn-next"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.RightArrow />}
-            />
-            <Button
-              onClick={() => swiper.firenze && swiper.firenze.slidePrev()}
-              className="btn-prev"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.LeftArrow />}
-            />
+          <div
+            className="flex justify-between align-center"
+            style={{ marginBottom: "10px" }}
+          >
+            <h3 style={{ fontWeight: "600" }}>
+              {cityTitles.Firenze} <Icons.RightArrow size={"0.8rem"} />
+            </h3>
+            <div className="btn-container">
+              <Button
+                onClick={() => swiper.firenze && swiper.firenze.slideNext()}
+                className="btn-next"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.RightArrow />}
+              />
+              <Button
+                onClick={() => swiper.firenze && swiper.firenze.slidePrev()}
+                className="btn-prev"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.LeftArrow />}
+              />
+            </div>
           </div>
           <Swiper
             modules={[Pagination]}
@@ -387,21 +454,29 @@ function SwiperComponent() {
         </div>
 
         <div id="swiper-budapest">
-          <div className="btn-container">
-            <Button
-              onClick={() => swiper.budapest && swiper.budapest.slideNext()}
-              className="btn-next"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.RightArrow />}
-            />
-            <Button
-              onClick={() => swiper.budapest && swiper.budapest.slidePrev()}
-              className="btn-prev"
-              size={Size.Sm}
-              color={Color.First}
-              icon={<Icons.LeftArrow />}
-            />
+          <div
+            className="flex justify-between align-center"
+            style={{ marginBottom: "10px" }}
+          >
+            <h3 style={{ fontWeight: "600" }}>
+              {cityTitles.Budapest} <Icons.RightArrow size={"0.8rem"} />
+            </h3>
+            <div className="btn-container">
+              <Button
+                onClick={() => swiper.budapest && swiper.budapest.slideNext()}
+                className="btn-next"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.RightArrow />}
+              />
+              <Button
+                onClick={() => swiper.budapest && swiper.budapest.slidePrev()}
+                className="btn-prev"
+                size={Size.Sm}
+                color={Color.First}
+                icon={<Icons.LeftArrow />}
+              />
+            </div>
           </div>
           <Swiper
             modules={[Pagination]}

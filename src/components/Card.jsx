@@ -17,17 +17,17 @@ const Card = ({ image, location, dates, hostType, price, rating }) => {
             <div className="flex align-center label">Amato dagli ospiti</div>
           )}
         </div>
-        <img src={image} alt={location} />
-        <p>{location}</p>
+        <img src={image} alt={location} id="img-card" />
+        <p style={{fontSize: "13px", fontWeight: "500", marginTop: "10px", marginBottom: "2px"}}>{location}</p>
         <div>
-          <small className="flex">
+          <small className="flex" style={{fontSize: "11px", lineHeight: "18px"}}>
             {dates}
             <div>·</div>
             {hostType}
           </small>
         </div>
         <div>
-          <small className="flex">
+          <small className="flex" style={{fontSize: "11px"}}>
             {price} <div>·</div> <Icons.Star /> {rating}
           </small>
         </div>
