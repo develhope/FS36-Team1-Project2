@@ -1,6 +1,7 @@
 import { FiShare } from "react-icons/fi";
 import { BsGeoAlt } from "react-icons/bs";
 import { SiAirbnb } from "react-icons/si";
+import { FaFacebook } from "react-icons/fa";
 import { CiCalendar } from "react-icons/ci";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { FaPlusMinus } from "react-icons/fa6";
@@ -18,36 +19,35 @@ import {
   AiOutlineX,
   AiTwotoneCopyrightCircle,
 } from "react-icons/ai";
+import { MdGTranslate, MdOutlineArrowBackIosNew } from "react-icons/md";
 import {
-  MdGTranslate,
-  MdOutlineArrowBackIosNew,
-  MdOutlineArrowForwardIos,
-} from "react-icons/md";
-import {
+  IoIosArrowDown,
   IoIosArrowForward,
+  IoIosArrowUp,
   IoIosClose,
   IoIosStar,
-  IoLogoFacebook,
   IoLogoInstagram,
 } from "react-icons/io";
 export const Icons = {
   Share: FiShare,
   Globe: LuGlobe,
-  Heart: GoHeartFill,
   Star: IoIosStar,
   Meta: AiOutlineX,
   House: BiHomeAlt2,
   Close: IoIosClose,
   Position: BsGeoAlt,
+  Heart: GoHeartFill,
   Euro: TbCurrencyEuro,
   Calendar: CiCalendar,
   Search: RiSearchLine,
   AirBnbLogo: SiAirbnb,
+  UpArrow: IoIosArrowUp,
   PlusMinus: FaPlusMinus,
   Translate: MdGTranslate,
-  Facebook: IoLogoFacebook,
+  Facebook: FaFacebook,
   AirBalloon: TbAirBalloon,
   PlusCircle: GoPlusCircle,
+  DownArrow: IoIosArrowDown,
   Hamburger: RxHamburgerMenu,
   Instagram: IoLogoInstagram,
   Bell: LiaConciergeBellSolid,
@@ -60,4 +60,4 @@ export const Icons = {
   LeftArrow: MdOutlineArrowBackIosNew,
   RightArrowCircle: TfiArrowCircleRight,
   Question: HiOutlineQuestionMarkCircle,
-}; 
+};

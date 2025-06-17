@@ -27,7 +27,6 @@ function Modal({ host, language, heart, onClose }) {
       transform: "translate(-50%, -50%)",
       border: "none",
       zIndex: 1001,
-      background: "trasparent"
     },
   };
 
@@ -161,7 +160,6 @@ function Modal({ host, language, heart, onClose }) {
         isOpen={heart}
         style={customHeartStyles}
         onRequestClose={handleButtonClose}
-
       >
         <form id={style["form-cuore"]}>
           <div id={style["form-container"]}>
