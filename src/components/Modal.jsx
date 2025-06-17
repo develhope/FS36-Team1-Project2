@@ -9,7 +9,7 @@ import {
   selectCurrencyConfig,
 } from "../locale/modalConfig";
 
-function Modal({ host, language, heart, onClose }) {
+export function Modal({ host, language, heart, onClose }) {
   const [activeId, setActiveId] = useState(null);
   const hostIconsClasses = `flex flex-col justify-center align-center ${style["icon"]}`;
 
@@ -499,5 +499,3 @@ function Modal({ host, language, heart, onClose }) {
     </>
   );
 }
-
-export default Modal
