@@ -1,0 +1,20 @@
+#finestra-cane {
+  width: 568px;
+  height: 42.188rem;
+  background-color: #fff;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 2.188rem;
+  box-shadow: 0 0.313rem 1.25rem rgba(0, 0, 0, 0.1);
+}
+
+#img-testo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#immagine-cane {
+  width: 520px;
+}
