@@ -1,0 +1,50 @@
+.calendar-container{
+    position: absolute;
+    width: 44.375rem;
+    height: 28.125rem;
+    top: 5rem;
+    left: -1.25rem;
+    box-shadow: var(--shadow-light-container);
+    border-radius: 1.25rem;
+    padding: 1.875rem
+}
+
+.mySelected {
+  background-color: var(--colorePrimario) !important;
+  color: white !important;
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.rangeStart {
+  background-color: var(--colorePrimario) !important;
+  color: white !important;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.rangeEnd {
+  background-color: var(--colorePrimario) !important;
+  color: white !important;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.rangeMiddle {
+  background-color: #ffa5b6 !important;
+  color: black !important;
+  border-radius: 0 !important;
+}
+
+
+#btn-container{
+  gap: 0.625rem;
+}
+
+#btn-container > button {
+  padding: 0.313rem 0.625rem;
+  border: 0.063rem solid gray;
+  border-radius: 1.25rem;
+  cursor: pointer;
+}

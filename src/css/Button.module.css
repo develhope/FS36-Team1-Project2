@@ -1,132 +1,111 @@
 .btn {
-  all: unset;
-  font-weight: 600;
-  border-radius: 3.125rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    all: unset;
+    font-weight: 600;
+    border-radius: 3.125rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-xs {
-  padding: 0;
-  font-size: 0.875rem;
+    padding: 0;
+    font-size: 0.875rem;
 }
 
-.btn-sm {
-  padding: 0.375rem;
-  font-size: 0.875rem;
+.btn-sm { 
+    padding: 0.375rem; 
+    font-size: 0.875rem; 
 }
-.btn-md {
-  padding: 0.938rem;
-  font-size: 1rem;
+.btn-md { 
+    padding: 0.938rem; 
+    font-size: 1rem; 
 }
-.btn-lg {
-  padding: 0.625rem;
-  font-size: 1.25rem;
-  width: 2rem;
-  height: 2rem;
-}
-
-.btn-transparent {
-  background: transparent;
+.btn-lg { 
+    padding: 0.625rem; 
+    font-size: 1.25rem; 
+    width: 2rem;
+    height: 2rem;
 }
 
-.btn-pink {
-  background: var(--colorePrimario);
-  color: white;
-  margin: 0 1rem 0 0;
-  position: absolute;
-  right: 0;
+.btn-transparent{
+    background:transparent;
 }
 
-.btn-pink:hover {
-  background: #dd1063;
+.btn-pink { 
+    background: var(--colorePrimario); 
+    color: white;
+    margin: 0 1rem 0 0; 
+    position: absolute;
+    right: 0;
 }
 
-.btn-gray {
-  background: #ebebeb;
-  color: black;
+.btn-pink:hover { 
+    background: #DD1063; 
 }
 
-.btn-gray:hover {
-  transform: scale(1.05);
+.btn-gray { 
+    background: #EBEBEB; 
+    color: black;
 }
 
-.btn-dark-gray svg {
-  fill: rgba(0, 0, 0, 0.5);
-  stroke: white;
-  stroke-width: 2;
-  font-size: 1.5rem;
-  filter: drop-shadow(0 0.125rem 0.375rem rgba(0, 0, 0, 0.25));
+.btn-gray:hover {  
+    transform: scale(1.05);
+}
+
+.btn-dark-gray svg{
+    fill: rgba(0, 0, 0, 0.5);
+    stroke: white;
+    stroke-width: 2;
+    font-size: 1.5rem;
+    filter: drop-shadow(0 0.125rem 0.375rem rgba(0, 0, 0, 0.25));
+
 }
 
 .btn-dark-gray:hover {
-  transform: scale(1.05);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.btn-disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+.btn-disabled { 
+    opacity: 0.5; 
+    cursor: not-allowed; 
 }
 
 .btn-bounce {
-  animation: bounce 300ms ease-out;
+    animation: bounce 300ms ease-out;
 }
 
 @keyframes bounce {
-  0% {
-    transform: scale(1.05);
-  }
-  30% {
-    transform: scale(0.95);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  70% {
-    transform: scale(1.02);
-  }
-  100% {
-    transform: scale(1.05);
-  }
+    0%   { transform: scale(1.05); }
+    30%  { transform: scale(0.95); }
+    50%  { transform: scale(1.1); }
+    70%  { transform: scale(1.02); }
+    100% { transform: scale(1.05); }
 }
 
 .btn-dark-gray-leave {
-  animation: pop-leave 500ms forwards;
+    animation: pop-leave 500ms forwards;
 }
 
 @keyframes pop-leave {
-  0% {
-    transform: scale(1.05);
-  }
-  30% {
-    transform: scale(1.1);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1);
-  }
+    0% {transform: scale(1.05);}
+    30% {transform: scale(1.1);}
+    50% {transform: scale(1);}
+    100% {transform: scale(1);}
 }
 
 .btn-active {
-  background: linear-gradient(to right, #e61e4d 0%, #e31c5f 50%, #d70466 100%);
-  animation: activated 0.3s forwards;
-  justify-content: space-between;
+    background: linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%);
+    animation: activated 0.3s forwards;
+    justify-content: space-between;
 }
 
 @keyframes activated {
-  from {
-    width: 2rem;
-  }
-  to {
-    width: 6rem;
-  }
+    from {width: 2rem;}
+    to {width: 6rem;}
 }
