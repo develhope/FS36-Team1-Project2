@@ -78,7 +78,6 @@ import budapest5Png from "../assets/Images/budapest/budapest5.png";
 import budapest6Png from "../assets/Images/budapest/budapest6.png";
 import budapest7Png from "../assets/Images/budapest/budapest7.png";
 import budapest8Png from "../assets/Images/budapest/budapest8.png";
-import { FiKey } from "react-icons/fi";
 
 const milano = {
   corvetto: corvettoPng,
@@ -99,7 +98,7 @@ const roma = {
   roma5: roma5Png,
   roma6: roma6Png,
   roma7: roma7Png,
-  roma8: roma8Png,
+  roma8: roma8Png
 };
 
 const torino = {
@@ -110,7 +109,7 @@ const torino = {
   torino5: torino5Png,
   torino6: torino6Png,
   torino7: torino7Png,
-  torino8: torino8Png,
+  torino8: torino8Png
 };
 
 const napoli = {
@@ -121,7 +120,7 @@ const napoli = {
   napoli5: napoli5Png,
   napoli6: napoli6Png,
   napoli7: napoli7Png,
-  napoli8: napoli8Png,
+  napoli8: napoli8Png
 };
 
 const barcellona = {
@@ -132,7 +131,7 @@ const barcellona = {
   barcellona5: barcellona5Png,
   barcellona6: barcellona6Png,
   barcellona7: barcellona7Png,
-  barcellona8: barcellona8Png,
+  barcellona8: barcellona8Png
 };
 
 const parigi = {
@@ -143,7 +142,7 @@ const parigi = {
   parigi5: parigi5Png,
   parigi6: parigi6Png,
   parigi7: parigi7Png,
-  parigi8: parigi8Png,
+  parigi8: parigi8Png
 };
 
 const bologna = {
@@ -154,7 +153,7 @@ const bologna = {
   bologna5: bologna5Png,
   bologna6: bologna6Png,
   bologna7: bologna7Png,
-  bologna8: bologna8Png,
+  bologna8: bologna8Png
 };
 
 const firenze = {
@@ -165,7 +164,7 @@ const firenze = {
   firenze5: firenze5Png,
   firenze6: firenze6Png,
   firenze7: firenze7Png,
-  firenze8: firenze8Png,
+  firenze8: firenze8Png
 };
 
 const budapest = {
@@ -176,8 +175,9 @@ const budapest = {
   budapest5: budapest5Png,
   budapest6: budapest6Png,
   budapest7: budapest7Png,
-  budapest8: budapest8Png,
+  budapest8: budapest8Png
 };
+
 
 export const milanoData = [
   {
@@ -246,538 +246,538 @@ export const milanoData = [
   },
 ];
 
-export const romaData = [
-  {
-    image: roma.roma,
-    location: "Appartamento ⋅ Roma",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "160 € per 2 notti",
-    rating: "4,91",
-  },
-  {
-    image: roma.roma2,
-    location: "Stanza a Roma",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "194 € per 2 notti",
-    rating: "4,92",
-  },
-  {
-    image: roma.roma3,
-    location: "Stanza a Roma",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "176 € per 2 notti",
-    rating: "4,92",
-  },
-  {
-    image: roma.roma4,
-    location: "Stanza a Roma",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "211 € per 2 notti",
-    rating: "4,85",
-  },
-  {
-    image: roma.roma5,
-    location: "Appartamento ⋅ Roma",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "235 € per 2 notti",
-    rating: "4,96",
-  },
-  {
-    image: roma.roma6,
-    location: "Stanza a Roma",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "168 € per 2 notti",
-    rating: "4,96",
-  },
-  {
-    image: roma.roma7,
-    location: "Stanza a Roma",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "211 € per 2 notti",
-    rating: "5,0",
-  },
-  {
-    image: roma.roma8,
-    location: "Stanza a Roma",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "211 € per 2 notti",
-    rating: "5,0",
-  },
-];
+  export const romaData = [
+    {
+      image: roma.roma,
+      location: "Appartamento ⋅ Roma",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "160 € per 2 notti",
+      rating: "4,91",
+    },
+    {
+      image: roma.roma2,
+      location: "Stanza a Roma",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "194 € per 2 notti",
+      rating: "4,92",
+    },
+    {
+      image: roma.roma3,
+      location: "Stanza a Roma",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "176 € per 2 notti",
+      rating: "4,92",
+    },
+    {
+      image: roma.roma4,
+      location: "Stanza a Roma",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "211 € per 2 notti",
+      rating: "4,85",
+    },
+    {
+      image: roma.roma5,
+      location: "Appartamento ⋅ Roma",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "235 € per 2 notti",
+      rating: "4,96",
+    },
+    {
+      image: roma.roma6,
+      location: "Stanza a Roma",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "168 € per 2 notti",
+      rating: "4,96",
+    },
+    {
+      image: roma.roma7,
+      location: "Stanza a Roma",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "211 € per 2 notti",
+      rating: "5,0",
+    },
+      {
+      image: roma.roma8,
+      location: "Stanza a Roma",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "211 € per 2 notti",
+      rating: "5,0",
+    },
+  ];
 
-export const torinoData = [
-  {
-    image: torino.torino,
-    location: "Appartamento - Aurora",
-    dates: "25-27 lug",
-    hostType: "Host privato",
-    price: "75 € per 2 notti",
-    rating: "4,78",
-  },
-  {
-    image: torino.torino2,
-    location: "Stanza a Parella",
-    dates: "25-27 lug",
-    hostType: "Host privato",
-    price: "61 € per 2 notti",
-    rating: "4,82",
-  },
-  {
-    image: torino.torino3,
-    location: "Alloggio (Torino)",
-    dates: "18-20 lug",
-    hostType: "Host privato",
-    price: "81 € per 2 notti",
-    rating: "4,83",
-  },
-  {
-    image: torino.torino4,
-    location: "Stanza a San Donato",
-    dates: "12-14 set",
-    hostType: "Host privato",
-    price: "89 € per 2 notti",
-    rating: "4,92",
-  },
-  {
-    image: torino.torino5,
-    location: "Stanza a San Donato",
-    dates: "12-14 set",
-    hostType: "Host privato",
-    price: "89 € per 2 notti",
-    rating: "4,92",
-  },
-  {
-    image: torino.torino6,
-    location: "Stanza a San Donato",
-    dates: "12-14 set",
-    hostType: "Host privato",
-    price: "89 € per 2 notti",
-    rating: "4,92",
-  },
-  {
-    image: torino.torino7,
-    location: "Stanza a San Donato",
-    dates: "12-14 set",
-    hostType: "Host privato",
-    price: "89 € per 2 notti",
-    rating: "4,92",
-  },
-  {
-    image: torino.torino8,
-    location: "Stanza a San Donato",
-    dates: "12-14 set",
-    hostType: "Host privato",
-    price: "89 € per 2 notti",
-    rating: "4,92",
-  },
-];
+  export const torinoData = [
+    {
+      image: torino.torino,
+      location: "Appartamento - Aurora",
+      dates: "25-27 lug",
+      hostType: "Host privato",
+      price: "75 € per 2 notti",
+      rating: "4,78",
+    },
+    {
+      image: torino.torino2,
+      location: "Stanza a Parella",
+      dates: "25-27 lug",
+      hostType: "Host privato",
+      price: "61 € per 2 notti",
+      rating: "4,82",
+    },
+    {
+      image: torino.torino3,
+      location: "Alloggio (Torino)",
+      dates: "18-20 lug",
+      hostType: "Host privato",
+      price: "81 € per 2 notti",
+      rating: "4,83",
+    },
+    {
+      image: torino.torino4,
+      location: "Stanza a San Donato",
+      dates: "12-14 set",
+      hostType: "Host privato",
+      price: "89 € per 2 notti",
+      rating: "4,92",
+    },
+       {
+      image: torino.torino5,
+      location: "Stanza a San Donato",
+      dates: "12-14 set",
+      hostType: "Host privato",
+      price: "89 € per 2 notti",
+      rating: "4,92",
+    },
+       {
+      image: torino.torino6,
+      location: "Stanza a San Donato",
+      dates: "12-14 set",
+      hostType: "Host privato",
+      price: "89 € per 2 notti",
+      rating: "4,92",
+    },
+       {
+      image: torino.torino7,
+      location: "Stanza a San Donato",
+      dates: "12-14 set",
+      hostType: "Host privato",
+      price: "89 € per 2 notti",
+      rating: "4,92",
+    },
+       {
+      image: torino.torino8,
+      location: "Stanza a San Donato",
+      dates: "12-14 set",
+      hostType: "Host privato",
+      price: "89 € per 2 notti",
+      rating: "4,92",
+    },
+  ];
 
-export const napoliData = [
-  {
-    image: napoli.napoli,
-    location: "Casa vacanze - Torre del Greco",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "82 € per 2 notti",
-    rating: "4,91",
-  },
-  {
-    image: napoli.napoli2,
-    location: "Stanza a Napoli",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "116 € per 2 notti",
-    rating: "4,97",
-  },
-  {
-    image: napoli.napoli3,
-    location: "Stanza a Napoli",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "120 € per 2 notti",
-    rating: "4,93",
-  },
-  {
-    image: napoli.napoli4,
-    location: "Stanza a Napoli",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "180 € per 2 notti",
-    rating: "5,0",
-  },
-  {
-    image: napoli.napoli5,
-    location: "Stanza a Napoli",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "180 € per 2 notti",
-    rating: "5,0",
-  },
-  {
-    image: napoli.napoli6,
-    location: "Stanza a Napoli",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "180 € per 2 notti",
-    rating: "5,0",
-  },
-  {
-    image: napoli.napoli7,
-    location: "Stanza a Napoli",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "180 € per 2 notti",
-    rating: "5,0",
-  },
-  {
-    image: napoli.napoli8,
-    location: "Stanza a Napoli",
-    dates: "30 mag - 01 giu",
-    hostType: "Host privato",
-    price: "180 € per 2 notti",
-    rating: "5,0",
-  },
-];
+  export const napoliData = [
+    {
+      image: napoli.napoli,
+      location: "Casa vacanze - Torre del Greco",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "82 € per 2 notti",
+      rating: "4,91",
+    },
+    {
+      image: napoli.napoli2,
+      location: "Stanza a Napoli",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "116 € per 2 notti",
+      rating: "4,97",
+    },
+    {
+      image: napoli.napoli3,
+      location: "Stanza a Napoli",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "120 € per 2 notti",
+      rating: "4,93",
+    },
+    {
+      image: napoli.napoli4,
+      location: "Stanza a Napoli",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "180 € per 2 notti",
+      rating: "5,0",
+    },
+     {
+      image: napoli.napoli5,
+      location: "Stanza a Napoli",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "180 € per 2 notti",
+      rating: "5,0",
+    },
+     {
+      image: napoli.napoli6,
+      location: "Stanza a Napoli",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "180 € per 2 notti",
+      rating: "5,0",
+    },
+     {
+      image: napoli.napoli7,
+      location: "Stanza a Napoli",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "180 € per 2 notti",
+      rating: "5,0",
+    },
+     {
+      image: napoli.napoli8,
+      location: "Stanza a Napoli",
+      dates: "30 mag - 01 giu",
+      hostType: "Host privato",
+      price: "180 € per 2 notti",
+      rating: "5,0",
+    },
+  ];
 
-export const barcellonaData = [
-  {
-    image: barcellona.barcellona,
-    location: "Stanza a Barcellona",
-    dates: "14-16 nov",
-    hostType: "Host privato",
-    price: "84 € per 2 notti",
-    rating: "4,82",
-  },
-  {
-    image: barcellona.barcellona2,
-    location: "Stanza a Barcellona",
-    dates: "02-04 gen",
-    hostType: "Host privato",
-    price: "82 € per 2 notti",
-    rating: "4,81",
-  },
-  {
-    image: barcellona.barcellona3,
-    location: "Stanza a Barcellona",
-    dates: "02-04 gen",
-    hostType: "Host privato",
-    price: "70 € per 2 notti",
-    rating: "4,81",
-  },
-  {
-    image: barcellona.barcellona4,
-    location: "Stanza a Barcellona",
-    dates: "14-16 nov",
-    hostType: "Host privato",
-    price: "154 € per 2 notti",
-    rating: "4,82",
-  },
-  {
-    image: barcellona.barcellona5,
-    location: "Stanza a Barcellona",
-    dates: "05-07 set",
-    hostType: "Host privato",
-    price: "107 € per 2 notti",
-    rating: "4,94",
-  },
-  {
-    image: barcellona.barcellona6,
-    location: "Stanza a Barcellona",
-    dates: "21-23 nov",
-    hostType: "Host privato",
-    price: "176 € per 2 notti",
-    rating: "4,94",
-  },
-  {
-    image: barcellona.barcellona7,
-    location: "Stanza a Barcellona",
-    dates: "05-07 set",
-    hostType: "Host privato",
-    price: "141 € per 2 notti",
-    rating: "4,88",
-  },
-  {
-    image: barcellona.barcellona8,
-    location: "Stanza a Cornellà de Llobregat",
-    dates: "29-31 ago",
-    hostType: "Host privato",
-    price: "84 € per 2 notti",
-    rating: "4,88",
-  },
-];
+  export const barcellonaData = [
+    {
+      image: barcellona.barcellona,
+      location: "Stanza a Barcellona",
+      dates: "14-16 nov",
+      hostType: "Host privato",
+      price: "84 € per 2 notti",
+      rating: "4,82"
+    },
+    {
+      image: barcellona.barcellona2,
+      location: "Stanza a Barcellona",
+      dates: "02-04 gen",
+      hostType: "Host privato",
+      price: "82 € per 2 notti",
+      rating: "4,81"
+    },
+    {
+      image: barcellona.barcellona3,
+      location: "Stanza a Barcellona",
+      dates: "02-04 gen",
+      hostType: "Host privato",
+      price: "70 € per 2 notti",
+      rating: "4,81"
+    },
+    {
+      image: barcellona.barcellona4,
+      location: "Stanza a Barcellona",
+      dates: "14-16 nov",
+      hostType: "Host privato",
+      price: "154 € per 2 notti",
+      rating: "4,82"
+    },
+    {
+      image: barcellona.barcellona5,
+      location: "Stanza a Barcellona",
+      dates: "05-07 set",
+      hostType: "Host privato",
+      price: "107 € per 2 notti",
+      rating: "4,94"
+    },
+    {
+      image: barcellona.barcellona6,
+      location: "Stanza a Barcellona",
+      dates: "21-23 nov",
+      hostType: "Host privato",
+      price: "176 € per 2 notti",
+      rating: "4,94"
+    },
+    {
+      image: barcellona.barcellona7,
+      location: "Stanza a Barcellona",
+      dates: "05-07 set",
+      hostType: "Host privato",
+      price: "141 € per 2 notti",
+      rating: "4,88"
+    },
+    {
+      image: barcellona.barcellona8,
+      location: "Stanza a Cornellà de Llobregat",
+      dates: "29-31 ago",
+      hostType: "Host privato",
+      price: "84 € per 2 notti",
+      rating: "4,88"
+    }
+  ];
 
-export const parigiData = [
-  {
-    image: parigi.parigi,
-    location: "Stanza a Parigi",
-    dates: "27-29 giu",
-    hostType: "Host privato",
-    price: "84 € per 2 notti",
-    rating: "5,0",
-  },
-  {
-    image: parigi.parigi2,
-    location: "Appartamento ⋅ Parigi",
-    dates: "13-15 giu",
-    hostType: "Host privato",
-    price: "161 € per 2 notti",
-    rating: "4,92",
-  },
-  {
-    image: parigi.parigi3,
-    location: "Stanza condivisa ⋅ Pantin",
-    dates: "20-22 giu",
-    hostType: "Host privato",
-    price: "65 € per 2 notti",
-    rating: "4,84",
-  },
-  {
-    image: parigi.parigi4,
-    location: "Stanza a Maisons-Alfort",
-    dates: "27-29 giu",
-    hostType: "Host privato",
-    price: "107 € per 2 notti",
-    rating: "5,0",
-  },
-  {
-    image: parigi.parigi5,
-    location: "Appartamento ⋅ Cachan",
-    dates: "06-08 giu",
-    hostType: "Host privato",
-    price: "117 € per 2 notti",
-    rating: "4,77",
-  },
-  {
-    image: parigi.parigi6,
-    location: "Stanza a Parigi",
-    dates: "27-29 giu",
-    hostType: "Host privato",
-    price: "161 € per 2 notti",
-    rating: "4,95",
-  },
-  {
-    image: parigi.parigi7,
-    location: "Stanza a Maisons-Alfort",
-    dates: "13-15 giu",
-    hostType: "Host privato",
-    price: "104 € per 2 notti",
-    rating: "4,82",
-  },
-  {
-    image: parigi.parigi8,
-    location: "Stanza a Villejuif",
-    dates: "27-29 giu",
-    hostType: "Host privato",
-    price: "121 € per 2 notti",
-    rating: "4,87",
-  },
-];
+  export const parigiData = [
+    {
+      image: parigi.parigi,
+      location: "Stanza a Parigi",
+      dates: "27-29 giu",
+      hostType: "Host privato",
+      price: "84 € per 2 notti",
+      rating: "5,0"
+    },
+    {
+      image: parigi.parigi2,
+      location: "Appartamento ⋅ Parigi",
+      dates: "13-15 giu",
+      hostType: "Host privato",
+      price: "161 € per 2 notti",
+      rating: "4,92"
+    },
+    {
+      image: parigi.parigi3,
+      location: "Stanza condivisa ⋅ Pantin",
+      dates: "20-22 giu",
+      hostType: "Host privato",
+      price: "65 € per 2 notti",
+      rating: "4,84"
+    },
+    {
+      image: parigi.parigi4,
+      location: "Stanza a Maisons-Alfort",
+      dates: "27-29 giu",
+      hostType: "Host privato",
+      price: "107 € per 2 notti",
+      rating: "5,0"
+    },
+    {
+      image: parigi.parigi5,
+      location: "Appartamento ⋅ Cachan",
+      dates: "06-08 giu",
+      hostType: "Host privato",
+      price: "117 € per 2 notti",
+      rating: "4,77"
+    },
+    {
+      image: parigi.parigi6,
+      location: "Stanza a Parigi",
+      dates: "27-29 giu",
+      hostType: "Host privato",
+      price: "161 € per 2 notti",
+      rating: "4,95"
+    },
+    {
+      image: parigi.parigi7,
+      location: "Stanza a Maisons-Alfort",
+      dates: "13-15 giu",
+      hostType: "Host privato",
+      price: "104 € per 2 notti",
+      rating: "4,82"
+    },
+    {
+      image: parigi.parigi8,
+      location: "Stanza a Villejuif",
+      dates: "27-29 giu",
+      hostType: "Host privato",
+      price: "121 € per 2 notti",
+      rating: "4,87"
+    }
+  ];
 
-export const bolognaData = [
-  {
-    image: bologna.bologna,
-    location: "Stanza a Saragozza",
-    dates: "07-09 nov",
-    hostType: "Host privato",
-    price: "128 € per 2 notti",
-    rating: "4,82",
-  },
-  {
-    image: bologna.bologna2,
-    location: "Stanza a Bologna",
-    dates: "25-27 lug",
-    hostType: "Host privato",
-    price: "142 € per 2 notti",
-    rating: "4,86",
-  },
-  {
-    image: bologna.bologna3,
-    location: "Stanza a Saragozza",
-    dates: "26-28 set",
-    hostType: "Host privato",
-    price: "115 € per 2 notti",
-    rating: "4,76",
-  },
-  {
-    image: bologna.bologna4,
-    location: "Stanza a Bolognina-Arcoveggio-Beverara",
-    dates: "29-31 ago",
-    hostType: "Host privato",
-    price: "102 € per 2 notti",
-    rating: "4,9",
-  },
-  {
-    image: bologna.bologna5,
-    location: "Stanza a Bologna",
-    dates: "12-14 set",
-    hostType: "Host privato",
-    price: "155 € per 2 notti",
-    rating: "4,87",
-  },
-  {
-    image: bologna.bologna6,
-    location: "Stanza a Bologna",
-    dates: "27-29 giu",
-    hostType: "Host privato",
-    price: "150 € per 2 notti",
-    rating: "5,0",
-  },
-  {
-    image: bologna.bologna7,
-    location: "Stanza a Bologna",
-    dates: "18-20 lug",
-    hostType: "Host privato",
-    price: "123 € per 2 notti",
-    rating: "4,91",
-  },
-  {
-    image: bologna.bologna8,
-    location: "Stanza a San Donato",
-    dates: "13-15 giu",
-    hostType: "Host privato",
-    price: "129 € per 2 notti",
-    rating: "4,94",
-  },
-];
+  export const bolognaData = [
+    {
+      image: bologna.bologna,
+      location: "Stanza a Saragozza",
+      dates: "07-09 nov",
+      hostType: "Host privato",
+      price: "128 € per 2 notti",
+      rating: "4,82"
+    },
+    {
+      image: bologna.bologna2,
+      location: "Stanza a Bologna",
+      dates: "25-27 lug",
+      hostType: "Host privato",
+      price: "142 € per 2 notti",
+      rating: "4,86"
+    },
+    {
+      image: bologna.bologna3,
+      location: "Stanza a Saragozza",
+      dates: "26-28 set",
+      hostType: "Host privato",
+      price: "115 € per 2 notti",
+      rating: "4,76"
+    },
+    {
+      image: bologna.bologna4,
+      location: "Stanza a Bolognina-Arcoveggio-Beverara",
+      dates: "29-31 ago",
+      hostType: "Host privato",
+      price: "102 € per 2 notti",
+      rating: "4,9"
+    },
+    {
+      image: bologna.bologna5,
+      location: "Stanza a Bologna",
+      dates: "12-14 set",
+      hostType: "Host privato",
+      price: "155 € per 2 notti",
+      rating: "4,87"
+    },
+    {
+      image: bologna.bologna6,
+      location: "Stanza a Bologna",
+      dates: "27-29 giu",
+      hostType: "Host privato",
+      price: "150 € per 2 notti",
+      rating: "5,0"
+    },
+    {
+      image: bologna.bologna7,
+      location: "Stanza a Bologna",
+      dates: "18-20 lug",
+      hostType: "Host privato",
+      price: "123 € per 2 notti",
+      rating: "4,91"
+    },
+    {
+      image: bologna.bologna8,
+      location: "Stanza a San Donato",
+      dates: "13-15 giu",
+      hostType: "Host privato",
+      price: "129 € per 2 notti",
+      rating: "4,94"
+    }
+  ];
 
-export const firenzeData = [
-  {
-    image: firenze.firenze,
-    location: "Stanza a Firenze",
-    dates: "07-09 nov",
-    hostType: "Host professionista",
-    price: "112 € per 2 notti",
-    rating: "4,91",
-  },
-  {
-    image: firenze.firenze2,
-    location: "Stanza a Firenze",
-    dates: "10-12 ott",
-    hostType: "Host privato",
-    price: "136 € per 2 notti",
-    rating: "4,94",
-  },
-  {
-    image: firenze.firenze3,
-    location: "Loft · Firenze",
-    dates: "05-07 dic",
-    hostType: "Host privato",
-    price: "190 € per 2 notti",
-    rating: "4,91",
-  },
-  {
-    image: firenze.firenze4,
-    location: "Appartamento · Scandicci",
-    dates: "14-16 nov",
-    hostType: "Host privato",
-    price: "149 € per 2 notti",
-    rating: "4,94",
-  },
-  {
-    image: firenze.firenze5,
-    location: "Stanza a Firenze",
-    dates: "01-03 ago",
-    hostType: "Host privato",
-    price: "139 € per 2 notti",
-    rating: "4,89",
-  },
-  {
-    image: firenze.firenze6,
-    location: "Appartamento · Firenze",
-    dates: "14-16 nov",
-    hostType: "Host privato",
-    price: "146 € per 2 notti",
-    rating: "5,0",
-  },
-  {
-    image: firenze.firenze7,
-    location: "Stanza a Firenze",
-    dates: "29-31 ago",
-    hostType: "Host privato",
-    price: "143 € per 2 notti",
-    rating: "4,75",
-  },
-  {
-    image: firenze.firenze8,
-    location: "Stanza a Firenze",
-    dates: "29-31 ago",
-    hostType: "Host privato",
-    price: "143 € per 2 notti",
-    rating: "4,75",
-  },
-];
+  export const firenzeData = [
+{
+      image: firenze.firenze,
+      location: "Stanza a Firenze",
+      dates: "07-09 nov",
+      hostType: "Host professionista",
+      price: "112 € per 2 notti",
+      rating: "4,91"
+    },
+    {
+      image: firenze.firenze2,
+      location: "Stanza a Firenze",
+      dates: "10-12 ott",
+      hostType: "Host privato",
+      price: "136 € per 2 notti",
+      rating: "4,94"
+    },
+    {
+      image: firenze.firenze3,
+      location: "Loft · Firenze",
+      dates: "05-07 dic",
+      hostType: "Host privato",
+      price: "190 € per 2 notti",
+      rating: "4,91"
+    },
+    {
+      image: firenze.firenze4,
+      location: "Appartamento · Scandicci",
+      dates: "14-16 nov",
+      hostType: "Host privato",
+      price: "149 € per 2 notti",
+      rating: "4,94"
+    },
+    {
+      image: firenze.firenze5,
+      location: "Stanza a Firenze",
+      dates: "01-03 ago",
+      hostType: "Host privato",
+      price: "139 € per 2 notti",
+      rating: "4,89"
+    },
+    {
+      image: firenze.firenze6,
+      location: "Appartamento · Firenze",
+      dates: "14-16 nov",
+      hostType: "Host privato",
+      price: "146 € per 2 notti",
+      rating: "5,0"
+    },
+    {
+      image: firenze.firenze7,
+      location: "Stanza a Firenze",
+      dates: "29-31 ago",
+      hostType: "Host privato",
+      price: "143 € per 2 notti",
+      rating: "4,75"
+    },
+     {
+      image: firenze.firenze8,
+      location: "Stanza a Firenze",
+      dates: "29-31 ago",
+      hostType: "Host privato",
+      price: "143 € per 2 notti",
+      rating: "4,75"
+    }
+  ];
 
-export const budapestData = [
-  {
-    image: budapest.budapest,
-    location: "Appartamento · Belváros-Lipótváros",
-    dates: "05-07 set",
-    hostType: "Host privato",
-    price: "95 € per 2 notti",
-    rating: "4,94",
-  },
-  {
-    image: budapest.budapest2,
-    location: "Appartamento · Erzsébetváros",
-    dates: "17-19 ott",
-    hostType: "Host privato",
-    price: "110 € per 2 notti",
-    rating: "4,95",
-  },
-  {
-    image: budapest.budapest3,
-    location: "Appartamento · Józsefváros",
-    dates: "05-07 set",
-    hostType: "Host privato",
-    price: "121 € per 2 notti",
-    rating: "4,82",
-  },
-  {
-    image: budapest.budapest4,
-    location: "Casa · Terézváros",
-    dates: "27-29 giu",
-    hostType: "Host privato",
-    price: "103 € per 2 notti",
-    rating: "4,88",
-  },
-  {
-    image: budapest.budapest5,
-    location: "Stanza a Erzsébetváros",
-    dates: "15-17 ago",
-    hostType: "Host privato",
-    price: "79 € per 2 notti",
-    rating: "4,95",
-  },
-  {
-    image: budapest.budapest6,
-    location: "Appartamento · Erzsébetváros",
-    dates: "27-29 giu",
-    hostType: "Host privato",
-    price: "122 € per 2 notti",
-    rating: "4,9",
-  },
-  {
-    image: budapest.budapest7,
-    location: "Appartamento · Erzsébetváros",
-    dates: "27-29 giu",
-    hostType: "Host privato",
-    price: "122 € per 2 notti",
-    rating: "4,9",
-  },
-  {
-    image: budapest.budapest8,
-    location: "Appartamento · Erzsébetváros",
-    dates: "27-29 giu",
-    hostType: "Host privato",
-    price: "122 € per 2 notti",
-    rating: "4,9",
-  },
-];
+  export const budapestData = [
+{
+      image: budapest.budapest,
+      location: "Appartamento · Belváros-Lipótváros",
+      dates: "05-07 set",
+      hostType: "Host privato",
+      price: "95 € per 2 notti",
+      rating: "4,94"
+    },
+    {
+      image: budapest.budapest2,
+      location: "Appartamento · Erzsébetváros",
+      dates: "17-19 ott",
+      hostType: "Host privato",
+      price: "110 € per 2 notti",
+      rating: "4,95"
+    },
+    {
+      image: budapest.budapest3,
+      location: "Appartamento · Józsefváros",
+      dates: "05-07 set",
+      hostType: "Host privato",
+      price: "121 € per 2 notti",
+      rating: "4,82"
+    },
+    {
+      image: budapest.budapest4,
+      location: "Casa · Terézváros",
+      dates: "27-29 giu",
+      hostType: "Host privato",
+      price: "103 € per 2 notti",
+      rating: "4,88"
+    },
+    {
+      image: budapest.budapest5,
+      location: "Stanza a Erzsébetváros",
+      dates: "15-17 ago",
+      hostType: "Host privato",
+      price: "79 € per 2 notti",
+      rating: "4,95"
+    },
+    {
+      image: budapest.budapest6,
+      location: "Appartamento · Erzsébetváros",
+      dates: "27-29 giu",
+      hostType: "Host privato",
+      price: "122 € per 2 notti",
+      rating: "4,9"
+    },
+     {
+      image: budapest.budapest7,
+      location: "Appartamento · Erzsébetváros",
+      dates: "27-29 giu",
+      hostType: "Host privato",
+      price: "122 € per 2 notti",
+      rating: "4,9"
+    },
+     {
+      image: budapest.budapest8,
+      location: "Appartamento · Erzsébetváros",
+      dates: "27-29 giu",
+      hostType: "Host privato",
+      price: "122 € per 2 notti",
+      rating: "4,9"
+    }
+  ]
