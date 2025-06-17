@@ -1,14 +1,3 @@
-export function Modal() {
-  return (
-    <div
-      style={{
-        width: 500,
-        height: 200,
-        backgroundColor: "red",
-      }}
-    ></div>
-  );
-}
 import { useEffect, useState } from "react";
 import style from "../css/Modal.module.css";
 import { Icons } from "../models/Icons";
@@ -20,7 +9,7 @@ import {
   selectCurrencyConfig,
 } from "../locale/modalConfig";
 
-export function Modal({ host, language, heart, onClose }) {
+function Modal({ host, language, heart, onClose }) {
   const [activeId, setActiveId] = useState(null);
   const hostIconsClasses = `flex flex-col justify-center align-center ${style["icon"]}`;
 
@@ -510,3 +499,5 @@ export function Modal({ host, language, heart, onClose }) {
     </>
   );
 }
+
+export default Modal

@@ -1,0 +1,58 @@
+#card-container {
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  width: 183px;
+  height: 21.875rem;
+}
+
+#card-container img {
+  width: inherit;
+  height: 18.125rem;
+  object-fit: cover;
+  border-radius: 1.25rem;
+  height: 172px;
+}
+
+#card-container p {
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin: 0.375rem 0;
+}
+
+#card-container small {
+  color: var(--testiGrigi);
+}
+
+#card-container small > div {
+  margin: 0 0.125rem;
+}
+
+#card-container p,
+#card-container small {
+  margin-left: 0.188rem;
+}
+
+#card-container .card-header {
+  flex-direction: row-reverse;
+  width: inherit;
+  position: absolute;
+}
+
+#card-container .label {
+  height: 1.875rem;
+  width: 150px;
+  margin-left: 10px;
+  padding: 0 0.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 3.125rem;
+  font-size: 11px;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.02),
+    0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+#card-container .label {
+  margin: 5%;
+}
