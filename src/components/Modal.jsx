@@ -1,3 +1,14 @@
+export function Modal() {
+  return (
+    <div
+      style={{
+        width: 500,
+        height: 200,
+        backgroundColor: "red",
+      }}
+    ></div>
+  );
+}
 import { useEffect, useState } from "react";
 import style from "../css/Modal.module.css";
 import { Icons } from "../models/Icons";
