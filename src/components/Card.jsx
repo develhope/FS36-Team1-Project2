@@ -1,80 +1,40 @@
-import { useEffect, useState } from "react";
 import "../css/Card.css";
-import { IoIosStar } from "react-icons/io";
-import { GoHeartFill } from "react-icons/go";
-
+import Button from "./Button";
+import { Icons } from "../models/Icons";
+import { useState } from "react";
+import Modal from "../components/Modal";
 
 const Card = ({ image, location, dates, hostType, price, rating }) => {
-  // Genera randomicamente la visibilità dell'etichetta
-  const showLabel = Math.random() < 0.5; // 50% di probabilità
-  console.log(image);
-
-  const [img, setImg] = useState();
   const [showForm, setShowForm] = useState(false);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const showLabel = Math.random() < 0.5;
 
-  const handleHeartClick = () => {
-    setShowForm(!showForm);
-  };
-
-  useEffect(() => {
-    const fetchImage = async () => {
-      try {
-        const response = await import(image);
-        setImg(response.default);
-      } catch (err) {
-        console.log(err);
-        setError(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchImage();
-  }, [image]);
-  if (error) {
-    return (
-      <div>
-        <p>Errore caricamento immagine</p>
-      </div>
-    );
-  }
-
-  if (loading) {
-    <div>
-      <p>Loading...</p>
-    </div>;
-  }
   return (
-    <div className="card">
-      <div className="card-image">
-        <div className="image">
-          <img src={img} alt={location} />
+    <>
+      <div className="flex flex-col" id="card-container">
+        <div className="flex justify-between align-center card-header ">
+          <Button icon={<Icons.Heart />} />
+          {showLabel && (
+            <div className="flex align-center label">Amato dagli ospiti</div>
+          )}
         </div>
-        {showLabel && <div className="card-label">Amata dagli ospiti</div>}
-        <button className="heart-model-button" onClick={handleHeartClick}>
-          <GoHeartFill className="heart-icon" />
-        </button>
+        <img src={image} alt={location} id="img-card" />
+        <p style={{fontSize: "13px", fontWeight: "500", marginTop: "10px", marginBottom: "2px"}}>{location}</p>
+        <div>
+          <small className="flex" style={{fontSize: "11px", lineHeight: "18px"}}>
+            {dates}
+            <div>·</div>
+            {hostType}
+          </small>
+        </div>
+        <div>
+          <small className="flex" style={{fontSize: "11px"}}>
+            {price} <div>·</div> <Icons.Star /> {rating}
+          </small>
+        </div>
       </div>
 
-      <div className="card-content">
-        <h3 className="card-title">{location}</h3>
-		<div className="card-info">
-        <div>
-          {dates}
-		  {" ⋅ "}
-          {hostType}
-        </div>
-        <div>
-          {price} {" ⋅ "}
-          <span className="rating">
-            <IoIosStar /> {rating}
-          </span>
-        </div>
-		</div>
-      </div>
-    </div>
+      <Modal heart={showForm} onClose={() => setShowForm(false)} />
+    </>
   );
 };
 
