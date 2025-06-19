@@ -6,15 +6,9 @@ function App() {
   return (
     <>
       <Header />
-      <div
-        style={{
-          padding: "0 50px",
-          overflow: "hidden",
-          width: "100%",
-        }}
-      >
+      <main>
         <SwiperComponent />
-      </div>
+      </main>
       <Footer />
     </>
   );
