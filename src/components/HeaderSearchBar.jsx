@@ -6,9 +6,12 @@ import { Color } from "../models/Color";
 import { useEffect, useState, useRef } from "react";
 import Button from "./Button";
 import { Calendar } from "./Calendar";
+import Modal from "./Modal";
 
 export function HeaderSearchBar() {
   const componentRef = useRef(null);
+  const [isDogOpen, setIsDogOpen] = useState(false);
+
   const [activeButton, setActiveButton] = useState(null);
   const [extraDays, setExtraDays] = useState(0);
 
@@ -291,7 +294,9 @@ export function HeaderSearchBar() {
                 <div className="flex justify-between animals">
                   <div>
                     <h3>Animali domestici</h3>
-                    <span>Viaggi con un animale di servizio?</span>
+                    <span onClick={() => setIsDogOpen((prev) => !prev)}>
+                      Viaggi con un animale di servizio?
+                    </span>
                   </div>
                   <div
                     className={`flex justify-between align-center ${style["btn-container"]}`}
@@ -327,6 +332,8 @@ export function HeaderSearchBar() {
           {activeButton && <span> Cerca </span>}
         </Button>
       </div>
+
+      <Modal dog={isDogOpen} onClose={() => setIsDogOpen(false)} />
     </>
   );
 }

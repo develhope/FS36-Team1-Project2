@@ -1,15 +1,44 @@
 :root{
     --desktop-list-with: 1830px;
-    --desktop-list-height:1030px
+    --desktop-list-height:1030px;
+    --section-height: 260px
 }
+
+@media (min-width:1921px) {
+    footer > div {
+        width: var(--desktop-list-with);
+    }
+
+    footer div section{
+    width: calc(var(--desktop-list-with) / 3);
+    height: var(--section-height);
+}
+}
+
+
+@media (min-width:1440px) and (max-width: 1920px) {
+    footer{
+        padding: 0 3rem;
+    }
+
+    footer > div:first-child {
+        width: 1380px;
+    }
+
+    footer > div:not(:first-child){
+        width: 100%;
+    }
+
+    footer div section{
+    width: 33%;
+    height: var(--section-height);
+}
+}
+
 
 footer {
     width: 100%;
     background: linear-gradient(180deg,#ffffff 39.9%,#f8f8f8 100%);
-}
-
-footer > div {
-    width: 1830px;
 }
 
 footer #button-container {
@@ -41,9 +70,8 @@ footer #show-more svg{
     margin: 0 0 0 5px;
 }
 
-footer div section{
-    width: calc(var(--desktop-list-with) / 3);
-    margin: 100px 0 0 0;
+footer section #section-list li {
+    height: calc(var(--section-height) / 7)
 }
 
 footer #bottom-side div{
@@ -74,4 +102,8 @@ footer #link-container #links a{
 
 footer #link-container #links a:hover{
     background-color: var(--testiGrigi);
+}
+
+#section-container{
+    margin: 6rem 0 3rem 0;
 }

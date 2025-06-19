@@ -90,13 +90,16 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex" id="section-container">
           {sections.map((section, index) => (
             <section key={index}>
               <h3>{section.title}</h3>
               <div className="flex">
                 {section.list && (
-                  <ul className="flex flex-col justify-center">
+                  <ul
+                    className="flex flex-col justify-center"
+                    id="section-list"
+                  >
                     {section.list.map((item, itemIndex) => (
                       <li
                         className="flex flex-col justify-center"

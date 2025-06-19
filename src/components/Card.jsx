@@ -14,6 +14,7 @@ const Card = ({ image, location, dates, hostType, price, rating }) => {
         <div className="flex justify-between align-center card-header ">
           <Button
             icon={<Icons.Heart />}
+            bounce={true}
             onClick={() => setShowForm((prev) => !prev)}
           />
           {showLabel && (
