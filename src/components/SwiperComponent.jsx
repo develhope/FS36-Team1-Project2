@@ -56,7 +56,7 @@ function SwiperComponent() {
           }}
         ></div>
 
-        <div id="swiper-milano">
+        <div id="swiper-milano" style={{height: "300px" }}>
           <div
             className="flex justify-between align-center"
             style={{ marginBottom: "10px" }}
@@ -106,7 +106,7 @@ function SwiperComponent() {
           </Swiper>
         </div>
 
-        <div id="swiper-roma">
+        <div id="swiper-roma" style={{height: "300px" }}>
           <div
             className="flex justify-between align-center"
             style={{ marginBottom: "10px" }}
@@ -155,7 +155,7 @@ function SwiperComponent() {
           </Swiper>
         </div>
 
-        <div id="swiper-torino">
+        <div id="swiper-torino" style={{height: "300px" }}>
           <div
             className="flex justify-between align-center"
             style={{ marginBottom: "10px" }}
@@ -204,7 +204,7 @@ function SwiperComponent() {
           </Swiper>
         </div>
 
-        <div id="swiper-napoli">
+        <div id="swiper-napoli" style={{height: "300px" }}>
           <div
             className="flex justify-between align-center"
             style={{ marginBottom: "10px" }}
@@ -253,7 +253,7 @@ function SwiperComponent() {
           </Swiper>
         </div>
 
-        <div id="swiper-barcellona">
+        <div id="swiper-barcellona" style={{height: "300px" }}>
           <div
             className="flex justify-between align-center"
             style={{ marginBottom: "10px" }}
@@ -306,7 +306,7 @@ function SwiperComponent() {
           </Swiper>
         </div>
 
-        <div id="swiper-parigi">
+        <div id="swiper-parigi" style={{height: "300px" }}>
           <div
             className="flex justify-between align-center"
             style={{ marginBottom: "10px" }}
@@ -355,7 +355,7 @@ function SwiperComponent() {
           </Swiper>
         </div>
 
-        <div id="swiper-bologna">
+        <div id="swiper-bologna" style={{height: "300px" }}>
           <div
             className="flex justify-between align-center"
             style={{ marginBottom: "10px" }}
@@ -404,7 +404,7 @@ function SwiperComponent() {
           </Swiper>
         </div>
 
-        <div id="swiper-firenze">
+        <div id="swiper-firenze" style={{height: "300px" }}>
           <div
             className="flex justify-between align-center"
             style={{ marginBottom: "10px" }}
@@ -453,7 +453,7 @@ function SwiperComponent() {
           </Swiper>
         </div>
 
-        <div id="swiper-budapest">
+        <div id="swiper-budapest" style={{height: "300px" }}>
           <div
             className="flex justify-between align-center"
             style={{ marginBottom: "10px" }}
