@@ -95,6 +95,15 @@ footer #button-container div {
 footer button{
     all: unset;
     height: 20px;
+    color: var(--testiGrigi);
+}
+
+#footer-active-btn{
+    color: black;
+}
+
+footer #button-container span {
+    cursor: pointer;
 }
 
 footer #button-container .black-line{
@@ -147,9 +156,16 @@ footer > div:last-child{
     margin: 0 0 1rem 0 ;
 }
 
-footer #bottom-side div{
+footer #bottom-side div:first-child{
     gap: 10px;
-    height: 90px;
+}
+
+footer #bottom-side div:first-child > a{
+    cursor:pointer;
+}
+
+footer #bottom-side div:first-child > a:hover{
+    text-decoration: underline;
 }
 
 footer #link-container {
@@ -174,7 +190,7 @@ footer #link-container #links a{
 }
 
 footer #link-container #links a:hover{
-    background-color: var(--testiGrigi);
+    background-color: var(--hoverSearch);
 }
 
 #section-container{

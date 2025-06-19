@@ -43,7 +43,13 @@ export function Footer() {
               {buttons.map((item, index) => (
                 <div key={index}>
                   <button onClick={() => setActiveSection(item.id)}>
-                    <span>{item.text}</span>
+                    <span
+                      id={
+                        activeSection === item.id ? "footer-active-btn" : null
+                      }
+                    >
+                      {item.text}
+                    </span>
                     {activeSection === item.id && (
                       <div className="black-line" id={item.id}></div>
                     )}
@@ -118,7 +124,7 @@ export function Footer() {
           ))}
         </div>
         <hr />
-        <div className="flex justify-between">
+        <div className="flex justify-between" id="bottom-side">
           <div className="flex align-center">
             <Icons.Copyright />
             <span>2025 Airbnb, Inc.</span>·<a href="#"> Privacy </a>·

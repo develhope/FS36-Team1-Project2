@@ -10,7 +10,7 @@ function App() {
         style={{
           padding: "0 50px",
           overflow: "hidden",
-			    width: "100%",
+          width: "100%",
         }}
       >
         <SwiperComponent />

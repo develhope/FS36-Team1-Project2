@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import style from "../css/Header.module.css";
 import Button from "./Button";
-import  Modal from "./Modal";
+import Modal from "./Modal";
 import { Size } from "../models/Size";
 import { Icons } from "../models/Icons";
 import { Color } from "../models/Color";
