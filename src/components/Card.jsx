@@ -12,22 +12,37 @@ const Card = ({ image, location, dates, hostType, price, rating }) => {
     <>
       <div className="flex flex-col" id="card-container">
         <div className="flex justify-between align-center card-header ">
-          <Button icon={<Icons.Heart />} />
+          <Button
+            icon={<Icons.Heart />}
+            onClick={() => setShowForm((prev) => !prev)}
+          />
           {showLabel && (
             <div className="flex align-center label">Amato dagli ospiti</div>
           )}
         </div>
         <img src={image} alt={location} id="img-card" />
-        <p style={{fontSize: "13px", fontWeight: "500", marginTop: "10px", marginBottom: "2px"}}>{location}</p>
+        <p
+          style={{
+            fontSize: "13px",
+            fontWeight: "500",
+            marginTop: "10px",
+            marginBottom: "2px",
+          }}
+        >
+          {location}
+        </p>
         <div>
-          <small className="flex" style={{fontSize: "11px", lineHeight: "18px"}}>
+          <small
+            className="flex"
+            style={{ fontSize: "11px", lineHeight: "18px" }}
+          >
             {dates}
             <div>·</div>
             {hostType}
           </small>
         </div>
         <div>
-          <small className="flex" style={{fontSize: "11px"}}>
+          <small className="flex" style={{ fontSize: "11px" }}>
             {price} <div>·</div> <Icons.Star /> {rating}
           </small>
         </div>

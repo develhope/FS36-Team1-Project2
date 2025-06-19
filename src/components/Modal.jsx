@@ -8,12 +8,31 @@ import {
   selectLanguageConfig,
   selectCurrencyConfig,
 } from "../locale/modalConfig";
+import cane from "../assets/Images/cane.jpg";
 
-function Modal({ host, language, heart, onClose }) {
+function Modal({ host, language, heart, dog, onClose }) {
   const [activeId, setActiveId] = useState(null);
   const hostIconsClasses = `flex flex-col justify-center align-center ${style["icon"]}`;
 
-  const customHeartStyles = {
+  const customStyleNoBackground = {
+    overlay: {
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: 1000,
+    },
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      border: "none",
+      zIndex: 1001,
+      background: "transparent",
+    },
+  };
+
+  const customStyleBackground = {
     overlay: {
       backgroundColor: "rgba(0, 0, 0, 0.5)",
       zIndex: 1000,
@@ -36,13 +55,13 @@ function Modal({ host, language, heart, onClose }) {
   }
 
   useEffect(() => {
-    if (host || language || heart) {
+    if (host || language || heart || dog) {
       document.body.classList.add("modal-open");
     }
     return () => {
       document.body.classList.remove("modal-open");
     };
-  }, [host, language, heart]);
+  }, [host, language, heart, dog]);
 
   return (
     <>
@@ -89,6 +108,7 @@ function Modal({ host, language, heart, onClose }) {
         onRequestClose={onClose}
         className={`flex flex-col ${style["modal-centered"]}`}
         id={style["language"]}
+        style={customStyleBackground}
       >
         <button
           className={style["close-modal-button"]}
@@ -158,7 +178,7 @@ function Modal({ host, language, heart, onClose }) {
 
       <ReactModal
         isOpen={heart}
-        style={customHeartStyles}
+        style={customStyleNoBackground}
         onRequestClose={handleButtonClose}
       >
         <form id={style["form-cuore"]}>
@@ -496,8 +516,42 @@ function Modal({ host, language, heart, onClose }) {
           </div>
         </form>
       </ReactModal>
+
+      <ReactModal
+        isOpen={dog}
+        onRequestClose={handleButtonClose}
+      >
+        <div id="finestra-cane">
+          <div id="btn-cane">
+            <button id={style["btn-close"]} onClick={onclose}>
+              <Icons.Close />
+            </button>
+          </div>
+          <div id="img-testo">
+            <div id="immagine-cane">
+              <img src={cane} alt="img_cane" />
+            </div>
+            <div id="testo-animali">
+              <h2 id="animali-titolo">Animali di servizio</h2>
+              <p id="p-animali">
+                Non consideriamo gli animali di servizio come domestici, quindi
+                non c'è bisogno di aggiungerli qui.
+              </p>
+              <p id="p-animali2">
+                Viaggi con un animale d'assistenza emotiva? Consulta la nostra{" "}
+                <a href="">
+                  <u>
+                    <b>politica sull'accessibilità</b>
+                  </u>
+                </a>
+                .
+              </p>
+            </div>
+          </div>
+        </div>
+      </ReactModal>
     </>
   );
 }
 
-export default Modal
+export default Modal;
