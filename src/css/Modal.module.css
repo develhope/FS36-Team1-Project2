@@ -226,7 +226,7 @@
 
 #testo-paese {
   position: absolute;
-  margin-left: 3.5rem;
+  margin-left: 15px;
   margin-top: 0.188rem;
   color: rgb(130, 130, 130);
   font-weight: 400;
@@ -290,6 +290,7 @@
   border-radius: 0.5rem;
   background-color: white;
   border: 0.063rem solid black;
+  cursor: pointer;
 }
 
 #svg-google img,
@@ -356,6 +357,8 @@ div#facebook {
   font-size: 1rem;
   margin-top: 1.25rem;
   margin-bottom: 0;
+  text-align: center;
+  cursor: pointer;
 }
 
 div#container-hr {
@@ -389,4 +392,53 @@ div#container-hr {
 #btn-cuore > svg {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+#finestra-cane {
+  width: 568px;
+  height: 42.188rem;
+  background-color: #fff;
+  border-radius: 2.188rem;
+  box-shadow: 0 0.313rem 1.25rem rgba(0, 0, 0, 0.1);
+}
+
+#btn-cane {
+  height: 50px;
+}
+
+#img-testo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#immagine-cane {
+  text-align: center;
+}
+
+#immagine-cane img {
+  width: 520px;
+}
+
+#testo-animali {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+#animali-titolo,
+#p-animali,
+#p-animali2 {
+  text-align: left;
+  margin: 10px 0;
+}
+
+#animali-titolo {
+  font-weight: 500;
+}
+
+#p-animali,
+#p-animali2 {
+  font-weight: 300;
 }
