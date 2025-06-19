@@ -1,6 +1,3 @@
-import { id } from "react-day-picker/locale";
-import { texture } from "three/tsl";
-
 const huts = "Soggiorni in baite";
 const hotel = "Soggiorni in appartamenti con trattamento alberghiero";
 const chalet = "Soggiorni in chalet";
