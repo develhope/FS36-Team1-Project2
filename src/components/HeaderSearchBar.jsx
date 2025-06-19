@@ -150,12 +150,14 @@ export function HeaderSearchBar() {
             </span>
           </button>
           {activeButton === "check-in" && (
-            <Calendar
-              daysModifier={setExtraDays}
-              firstSelected={setFirstDay}
-              lastSelected={setLastDay}
-              noSelect={defaulDays}
-            />
+            <div id={style["calendar-wrapper"]}>
+              <Calendar
+                daysModifier={setExtraDays}
+                firstSelected={setFirstDay}
+                lastSelected={setLastDay}
+                noSelect={defaulDays}
+              />
+            </div>
           )}
         </div>
         <div

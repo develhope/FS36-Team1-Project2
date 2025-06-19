@@ -70,6 +70,7 @@ function Modal({ host, language, heart, dog, onClose }) {
         onRequestClose={handleButtonClose}
         id={style["host"]}
         className={`flex flex-col justify-between ${style["modal-centered"]}`}
+        style={customStyleBackground}
       >
         <button
           className={style["close-modal-button"]}
@@ -517,10 +518,7 @@ function Modal({ host, language, heart, dog, onClose }) {
         </form>
       </ReactModal>
 
-      <ReactModal
-        isOpen={dog}
-        onRequestClose={handleButtonClose}
-      >
+      <ReactModal isOpen={dog} onRequestClose={handleButtonClose}>
         <div id="finestra-cane">
           <div id="btn-cane">
             <button id={style["btn-close"]} onClick={onclose}>

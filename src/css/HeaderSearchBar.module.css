@@ -162,3 +162,7 @@
   color: rgba(128, 128, 128, 0.619);
   cursor: not-allowed;
 }
+
+.calendar-wrapper{
+  z-index: 4;
+}
