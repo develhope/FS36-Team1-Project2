@@ -294,7 +294,10 @@ export function HeaderSearchBar() {
                 <div className="flex justify-between animals">
                   <div>
                     <h3>Animali domestici</h3>
-                    <span onClick={() => setIsDogOpen((prev) => !prev)}>
+                    <span
+                      id={style["modal-span"]}
+                      onClick={() => setIsDogOpen((prev) => !prev)}
+                    >
                       Viaggi con un animale di servizio?
                     </span>
                   </div>

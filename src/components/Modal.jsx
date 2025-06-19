@@ -521,25 +521,28 @@ function Modal({ host, language, heart, dog, onClose }) {
       <ReactModal
         isOpen={dog}
         onRequestClose={handleButtonClose}
-        style={customStyleBackground}
+        style={customStyleNoBackground}
       >
-        <div id="finestra-cane">
-          <div id="btn-cane">
-            <button id={style["btn-close"]} onClick={onclose}>
+        <div id={style["finestra-cane"]}>
+          <div id={style["btn-cane"]}>
+            <button id={style["btn-close"]} onClick={handleButtonClose}>
               <Icons.Close />
             </button>
           </div>
-          <div id="img-testo">
-            <div id="immagine-cane">
-              <img src={cane} alt="img_cane" />
+          <div id={style["img-testo"]}>
+            <div id={style["immagine-cane"]}>
+              <img
+                src={cane}
+                alt="immagine di una perosona con un cane di sostegno"
+              />
             </div>
-            <div id="testo-animali">
-              <h2 id="animali-titolo">Animali di servizio</h2>
-              <p id="p-animali">
+            <div id={style["testo-animali"]}>
+              <h2 id={style["animali-titolo"]}>Animali di servizio</h2>
+              <p id={style["p-animali"]}>
                 Non consideriamo gli animali di servizio come domestici, quindi
                 non c'è bisogno di aggiungerli qui.
               </p>
-              <p id="p-animali2">
+              <p id={style["p-animali2"]}>
                 Viaggi con un animale d'assistenza emotiva? Consulta la nostra{" "}
                 <a href="">
                   <u>

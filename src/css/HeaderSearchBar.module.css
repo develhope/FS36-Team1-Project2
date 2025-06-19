@@ -11,11 +11,7 @@
     border:0.063rem solid #DDDDDD;
     border-radius: 3.125rem;
     position: relative;
-<<<<<<< HEAD
-    margin: 0.625rem 0 1.25rem;
-=======
     margin: 0.625rem 0 1.25rem 0;
->>>>>>> fdf26b4880911f4e3bd0f72a746da2ef05c242a4
     font-size: 0.75rem;
     cursor: pointer;
 }
@@ -167,6 +163,9 @@
   cursor: not-allowed;
 }
 
+#modal-span{
+  text-decoration: underline;
+}
 .calendar-wrapper{
   z-index: 4;
 }
