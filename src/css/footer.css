@@ -1,28 +1,56 @@
 :root{
-    --desktop-list-with: 1830px;
-    --desktop-list-height:1030px;
-    --section-height: 260px
+    --desktop-list-width: 1830px;
+    --desktop-list-height:820px;
+
+    --laptop-list-width:1380px;
+    --section-height: 260px;
 }
 
 @media (min-width:1921px) {
+
+    footer{
+        padding: 3rem 0 0 0;
+    }
+
+    hr{
+        width: var(--desktop-list-width);
+    }
     footer > div {
-        width: var(--desktop-list-with);
+        width: var(--desktop-list-width);
     }
 
     footer div section{
-    width: calc(var(--desktop-list-with) / 3);
-    height: var(--section-height);
+        width: calc(var(--desktop-list-width) / 3);
+        height: var(--section-height);
 }
+    footer div div ul li{
+        width: calc(var(--desktop-list-width) / 6);
+        height: calc(var(--desktop-list-height) / 17);
+    }
+
 }
 
 
 @media (min-width:1440px) and (max-width: 1920px) {
     footer{
-        padding: 0 3rem;
+        padding: 3rem 3rem 0;
+    }
+
+    footer div hr{
+        width: var(--laptop-list-width);
+    }
+
+    footer > hr{
+        width: 100%;
     }
 
     footer > div:first-child {
-        width: 1380px;
+        width: var(--laptop-list-width);
+    }
+
+    footer div div ul li{
+        width: calc(var(--laptop-list-width) / 6);
+        height: calc(var(--desktop-list-height) / 17);
     }
 
     footer > div:not(:first-child){
@@ -30,36 +58,77 @@
     }
 
     footer div section{
-    width: 33%;
-    height: var(--section-height);
+        width: 33%;
+        height: var(--section-height);
 }
 }
 
 
 footer {
     width: 100%;
-    background: linear-gradient(180deg,#ffffff 39.9%,#f8f8f8 100%);
+    background: rgb(247, 247, 247);
+    font-size: 14px;
+}
+
+footer h2 {
+    font-size: 22px;
+}
+
+footer h3{
+    font-size: 14px;
+}
+
+hr{
+    border: 0.5px solid rgb(210, 210, 210, 1);
 }
 
 footer #button-container {
-    margin: 30px 0 10px ;
+    margin: 20px 0 10px ;
     gap: 20px;
-    height: 40px;
+    height: 20px;
+}
+
+footer #button-container div {
+    position: relative;
 }
 
 footer button{
     all: unset;
-    height: inherit;
+    height: 20px;
+}
+
+footer #button-container .black-line{
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -10px;
+}
+.black-line#popular{
+    width: 50px;
+}
+
+.black-line#coastal{
+    width: 65px;
+}
+.black-line#historic{
+    width: 130px;
+}
+.black-line#island{
+    width: 30px;
+}
+.black-line#mountain{
+    width: 65px;
+}
+.black-line#activity{
+    width: 45px;
+}
+.black-line#category{
+    width: 60px;
 }
 
 footer div div ul{
     width: inherit;
     flex-wrap: wrap;
-}
-
-footer div div ul li{
-    width: calc(var(--desktop-list-with) / 6);
-    height: calc(var(--desktop-list-height) / 17);
 }
 
 footer div div ul li small{
@@ -72,6 +141,10 @@ footer #show-more svg{
 
 footer section #section-list li {
     height: calc(var(--section-height) / 7)
+}
+
+footer > div:last-child{
+    margin: 0 0 1rem 0 ;
 }
 
 footer #bottom-side div{

@@ -1,3 +1,6 @@
+import { id } from "react-day-picker/locale";
+import { texture } from "three/tsl";
+
 const huts = "Soggiorni in baite";
 const hotel = "Soggiorni in appartamenti con trattamento alberghiero";
 const chalet = "Soggiorni in chalet";
@@ -833,4 +836,33 @@ export const contactUs = [
   },
 ];
 
-export const host = [];
+export const buttons = [
+  {
+    id: "popular",
+    text: "Popolari",
+  },
+  {
+    id: "coastal",
+    text: "Sul litorale",
+  },
+  {
+    id: "historic",
+    text: "Destinazioni storiche",
+  },
+  {
+    id: "island",
+    text: "Isole",
+  },
+  {
+    id: "mountain",
+    text: "Montagne",
+  },
+  {
+    id: "activity",
+    text: "Attività",
+  },
+  {
+    id: "category",
+    text: "Categorie",
+  },
+];

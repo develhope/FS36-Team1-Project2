@@ -12,6 +12,7 @@ import {
   activities,
   categories,
   sections,
+  buttons,
 } from "../locale/footerConfig";
 import "../css/footer.css";
 
@@ -39,29 +40,22 @@ export function Footer() {
           <h2>Ispirazione per Viaggi futuri</h2>
           <div className="flex flex-col">
             <div className="flex" id="button-container">
-              <div>
-                <button onClick={() => setActiveSection("popular")}>
-                  Popolari
-                </button>
-              </div>
-              <button onClick={() => setActiveSection("coastal")}>
-                Sul litorale
-              </button>
-              <button onClick={() => setActiveSection("historic")}>
-                Destinazioni storiche
-              </button>
-              <button onClick={() => setActiveSection("island")}>Isole</button>
-              <button onClick={() => setActiveSection("mountain")}>
-                Montagne
-              </button>
-              <button onClick={() => setActiveSection("activity")}>
-                Attività
-              </button>
-              <button onClick={() => setActiveSection("category")}>
-                Categorie
-              </button>
+              {buttons.map((item, index) => (
+                <div key={index}>
+                  <button onClick={() => setActiveSection(item.id)}>
+                    <span>{item.text}</span>
+                    {activeSection === item.id && (
+                      <div className="black-line" id={item.id}></div>
+                    )}
+                  </button>
+                </div>
+              ))}
             </div>
-            <hr />
+            <hr
+              style={{
+                margin: "0 0 10px 0",
+              }}
+            />
             <ul className="flex">
               {displayList.map((item, index) => (
                 <li key={index} className="flex flex-col justify-center">
