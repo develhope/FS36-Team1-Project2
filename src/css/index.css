@@ -35,21 +35,19 @@
 }
 
 @media (min-width: 1921px) {
-  main{
-  width: 100%;
-  padding: 0 50px;
-  overflow: hidden;
+  main {
+    width: 100%;
+    padding: 0 50px;
+    overflow: hidden;
+  }
 }
 
-
-}
-
-@media (min-width: 1440px) and (max-width:1920px){
-  main{
-  width: 100%;
-  padding: 0 280px;
-  overflow: hidden;
-}
+@media (min-width: 1440px) and (max-width: 1920px) {
+  main {
+    width: 100%;
+    padding: 0 280px;
+    overflow: hidden;
+  }
 }
 
 * {
@@ -60,7 +58,6 @@
 body {
   font-family: var(--fontFamily);
 }
-
 
 .modal-open {
   overflow: hidden;
@@ -144,6 +141,7 @@ a {
   flex-direction: row-reverse;
   align-items: center;
   gap: 5px;
+  z-index: 1;
 }
 
 .btn-prev:disabled {
