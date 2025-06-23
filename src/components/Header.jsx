@@ -40,7 +40,7 @@ export function Header() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [guestMenu]);
 
   return (
     <>
@@ -104,7 +104,11 @@ export function Header() {
                 onClick={() => setGuestMenu((prev) => !prev)}
               />
               {guestMenu && (
-                <ul className="flex flex-col" id={style["guest"]}>
+                <ul
+                  ref={componentRef}
+                  className="flex flex-col"
+                  id={style["guest"]}
+                >
                   <li className="flex align-center">
                     <Icons.Question className="logo" size={"1.3rem"} />
                     <a href="#">Centro Assistenza</a>
