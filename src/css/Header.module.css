@@ -3,6 +3,7 @@
   --active-page-height: 3px;
   --hr-margin: 0.625rem;
   --div-width-adjust: 1.25rem;
+  ---colorePrimario: #fd385c;
 }
 
 @media (max-width: 709px) {
@@ -75,8 +76,16 @@ div > a {
 }
 
 .airbnb-logo {
-  font-size: 2rem;
+  font-size: 25px;
   color: var(--colorePrimario);
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.main-logo {
+  color: var(--colorePrimario);
+  width: 30px;
+  height: 3.5rem;
 }
 
 .header-button-container {

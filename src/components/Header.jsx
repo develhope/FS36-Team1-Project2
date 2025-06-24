@@ -47,7 +47,7 @@ export function Header() {
       <header className="flex flex-col align-center">
         <div className="flex justify-between">
           <a href="#" className="flex align-center">
-            <Icons.AirBnbLogo className="logo" />
+            <Icons.AirBnbLogo className={style["main-logo"]} />
             <span className={style["airbnb-logo"]}>airbnb</span>
           </a>
 
