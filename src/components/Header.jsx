@@ -116,21 +116,26 @@ export function Header() {
                   <hr />
                   <li>
                     <div className="flex justify-between align-center">
-                      <button
-                        className="flex flex-col"
-                        onClick={() => setBecomeHostModal((prev) => !prev)}
-                      >
-                        <span>
-                          <b>Inizia a ospitare</b>
-                        </span>
-                        <small>
-                          Inizia ad ospitare e guadagnare un extra è facile
-                        </small>
-                      </button>
+                      <div id={style["start-host"]}>
+                        <button
+                          className="flex flex-col"
+                          onClick={() => setBecomeHostModal((prev) => !prev)}
+                        >
+                          <span>
+                            <p id={style["start-lg"]}>Inizia a ospitare</p>
+                          </span>
+                          <p id={style["start-sm"]}>
+                            Inizia ad ospitare e guadagnare un extra è facile.
+                          </p>
+                        </button>
+                      </div>
                       <Icons.House className="logo" />
                     </div>
                   </li>
                   <hr />
+                  <li>
+                    <a href="#">Invita un co-host</a>
+                  </li>
                   <li>
                     <a href="#">Trova un co-host</a>
                   </li>
@@ -140,7 +145,7 @@ export function Header() {
                   <hr />
                   <li>
                     <button>
-                      <span>Accedi o registrati</span>
+                      <span id={style["login-reg"]}>Accedi o registrati</span>
                     </button>
                   </li>
                 </ul>

@@ -181,16 +181,19 @@
 }
 
 #who section div span {
-  padding: 0.25rem 0 0 0;
+  /* padding: 0.25rem 0 0 0; */
+  margin-bottom: 5px;
 }
 
 #who .disabled {
-  color: rgba(128, 128, 128, 0.619);
+  color: rgba(218, 218, 218, 0.619);
   cursor: not-allowed;
 }
 
 #modal-span {
   text-decoration: underline;
+  color: var(--testiGrigi);
+  font-weight: 500;
 }
 .calendar-wrapper {
   z-index: 4;
@@ -214,4 +217,19 @@
 #btn-search {
   font-size: 17px;
   font-weight: 400;
+}
+
+#who-titles {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#who-subs {
+  font-size: 13px;
+  color: var(--testiGrigi);
+  font-weight: 300;
+}
+
+#counter-num {
+  font-size: 16px;
 }

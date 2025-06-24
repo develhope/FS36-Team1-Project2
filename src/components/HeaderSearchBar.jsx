@@ -215,8 +215,8 @@ export function HeaderSearchBar() {
               <section className="flex flex-col justify-between">
                 <div className="flex justify-between adult">
                   <div>
-                    <h3>Adulti</h3>
-                    <small>Da 13 anni in su</small>
+                    <h3 id={style["who-titles"]}>Adulti</h3>
+                    <p id={style["who-subs"]}>Da 13 in su</p>
                   </div>
                   <div
                     className={`flex justify-between align-center ${style["btn-container"]}`}
@@ -225,10 +225,11 @@ export function HeaderSearchBar() {
                       disabled={disableGuest.adult}
                       className={disableGuest.adult ? style["disabled"] : ""}
                       onClick={() => updateGuestCount("adult", -1)}
+                      id={style["btn-who"]}
                     >
                       <Icons.MinusCircle />
                     </button>
-                    <span>{guests.adult}</span>
+                    <span id={style["counter-num"]}>{guests.adult}</span>
                     <button
                       disabled={maxValue.adult}
                       className={maxValue.adult ? style["disabled"] : ""}
@@ -241,8 +242,8 @@ export function HeaderSearchBar() {
                 <hr />
                 <div className="flex justify-between children">
                   <div>
-                    <h3>Bambini</h3>
-                    <small>Da 2 a 12 anni</small>
+                    <h3 id={style["who-titles"]}>Bambini</h3>
+                    <small id={style["who-subs"]}>Da 2 a 12 anni</small>
                   </div>
                   <div
                     className={`flex justify-between align-center ${style["btn-container"]}`}
@@ -254,7 +255,7 @@ export function HeaderSearchBar() {
                     >
                       <Icons.MinusCircle />
                     </button>
-                    <span>{guests.children}</span>
+                    <span id={style["counter-num"]}>{guests.children}</span>
                     <button
                       disabled={maxValue.children}
                       className={maxValue.children ? style["disabled"] : ""}
@@ -267,8 +268,8 @@ export function HeaderSearchBar() {
                 <hr />
                 <div className="flex justify-between new-born">
                   <div>
-                    <h3>Neonati</h3>
-                    <small>Fino a 2 anni</small>
+                    <h3 id={style["who-titles"]}>Neonati</h3>
+                    <small id={style["who-subs"]}>Fino a 2 anni</small>
                   </div>
                   <div
                     className={`flex justify-between align-center ${style["btn-container"]}`}
@@ -280,7 +281,7 @@ export function HeaderSearchBar() {
                     >
                       <Icons.MinusCircle />
                     </button>
-                    <span>{guests.newBorn}</span>
+                    <span id={style["counter-num"]}>{guests.newBorn}</span>
                     <button
                       disabled={maxValue.newBorn}
                       className={maxValue.newBorn ? style["disabled"] : ""}
@@ -293,7 +294,7 @@ export function HeaderSearchBar() {
                 <hr />
                 <div className="flex justify-between animals">
                   <div>
-                    <h3>Animali domestici</h3>
+                    <h3 id={style["who-titles"]}>Animali domestici</h3>
                     <span
                       id={style["modal-span"]}
                       onClick={() => setIsDogOpen((prev) => !prev)}
@@ -311,7 +312,7 @@ export function HeaderSearchBar() {
                     >
                       <Icons.MinusCircle />
                     </button>
-                    <span>{guests.animal}</span>
+                    <span id={style["counter-num"]}>{guests.animal}</span>
                     <button
                       disabled={maxValue.animal}
                       className={maxValue.animal ? style["disabled"] : ""}
