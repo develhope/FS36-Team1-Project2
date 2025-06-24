@@ -55,7 +55,7 @@ export function Header() {
             <div className={`${style["icon-height-adjust"]}`}>
               <a className="flex justify-center align-center" href="#">
                 <Icons.House className="logo" />
-                <span>Alloggi</span>
+                <span id={style["active-title"]}>Alloggi</span>
               </a>
               <div className={`${style["active-page"]}`}></div>
             </div>

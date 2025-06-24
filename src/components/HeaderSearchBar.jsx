@@ -100,8 +100,8 @@ export function HeaderSearchBar() {
           id={style["where"]}
           onClick={() => setActiveButton("where")}
         >
-          <label htmlFor="destinazione">Dove</label>
-          <input type="search" placeholder="Cerca destinazioni" name="" id="" />
+          <label htmlFor="destinazione" id={style["search-titles"]}>Dove</label>
+          <input type="search" placeholder="Cerca destinazioni" name="" id={style["search-placeholder"]} />
 
           {activeButton === "where" && (
             <section className={style[`${activeButton}-section`]}>
@@ -137,10 +137,10 @@ export function HeaderSearchBar() {
             id={style["check-in"]}
             onClick={() => setActiveButton("check-in")}
           >
-            <span>
-              <b>Check-in</b>
+            <span id={style["search-titles"]}>
+              <p>Check-in</p>
             </span>
-            <span className="flex justify-between">
+            <span className="flex justify-between" id={style["testi-grigi"]}>
               {firstDay}
               <div className="flex align-center">
                 {extraDays !== 0 ? (
@@ -174,10 +174,10 @@ export function HeaderSearchBar() {
             id={style["check-out"]}
             onClick={() => setActiveButton("check-out")}
           >
-            <span>
-              <b>Check-out</b>
+            <span id={style["search-titles"]}>
+              <p>Check-out</p>
             </span>
-            <span className="flex justify-between">
+            <span className="flex justify-between" id={style["testi-grigi"]}>
               {lastDay}
               <div className="flex align-center">
                 {extraDays !== 0 ? (
@@ -207,10 +207,10 @@ export function HeaderSearchBar() {
           onClick={() => setActiveButton("who")}
         >
           <div className="flex flex-col">
-            <span>
-              <b>Chi</b>
+            <span id={style["search-titles"]}>
+              <p>Chi</p>
             </span>
-            <span>{guestText}</span>
+            <span id={style["testi-grigi"]}>{guestText}</span>
             {activeButton === "who" && (
               <section className="flex flex-col justify-between">
                 <div className="flex justify-between adult">
@@ -332,7 +332,7 @@ export function HeaderSearchBar() {
           icon={<Icons.Search />}
           isActive={activeButton ? true : false}
         >
-          {activeButton && <span> Cerca </span>}
+          {activeButton && <span id={style["btn-search"]}>Cerca</span>}
         </Button>
       </div>
 
